@@ -1,0 +1,21 @@
+{
+  "name": "patriota",
+  "displayName": "patriota",
+  "description": "Tema orgulho do Brasil!",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "patriota",
+        "uiTheme": "vs-dark",
+        "path": "./themes/patriota-color-theme.json"
+      }
+    ]
+  }
+}
