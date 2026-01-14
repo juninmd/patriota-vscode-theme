@@ -1,16 +1,21 @@
-# patriota README
+# Tema Patriota 🇧🇷
 
-## Working with Markdown
+Este é o tema **Patriota** para o Visual Studio Code, criado para mostrar o orgulho do Brasil!
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+## Características
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+O tema utiliza as cores da bandeira do Brasil para criar um ambiente de desenvolvimento harmonioso e vibrante:
 
-## For more information
+*   **Fundo:** Azul profundo para conforto visual e contraste.
+*   **Destaques:** Verde bandeira e Amarelo ouro para elementos importantes.
+*   **Texto:** Branco e cinza claro para legibilidade.
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+## Instalação
 
-**Enjoy!**
+1.  Abra o Visual Studio Code.
+2.  Vá para a aba de Extensões.
+3.  Procure por "patriota".
+4.  Instale a extensão.
+5.  Selecione o tema "patriota" na lista de temas (`Ctrl+K Ctrl+T` ou `Cmd+K Cmd+T`).
+
+**Aproveite e mostre seu lado brasileiro!**
