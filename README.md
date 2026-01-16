@@ -4,14 +4,15 @@ Este é o tema **Patriota** para o Visual Studio Code, criado especialmente para
 
 ## Características
 
-O tema utiliza as cores vibrantes da bandeira do Brasil para criar um ambiente de desenvolvimento inspirador, harmonioso e moderno:
+O tema utiliza as cores vibrantes da bandeira do Brasil para criar um ambiente de desenvolvimento inspirador, harmonioso e moderno. Agora 100% fiel às cores da nossa bandeira!
 
-*   **Fundo (Azul Profundo):** Baseado no céu estrelado da bandeira, oferece conforto visual para longas horas de código (`#00152e`).
+*   **Fundo (Azul Oficial):** Baseado no céu estrelado da bandeira (`#002776`), oferecendo o verdadeiro espírito patriota.
 *   **Destaques (Verde e Amarelo):**
-    *   **Verde (#009c3b):** Utilizado em strings, barra de status e seleções, representando nossas matas.
-    *   **Amarelo (#ffdf00):** Utilizado em palavras-chave, números e constantes, representando nossas riquezas.
-*   **Terminal Integrado:** Cores totalmente configuradas para trazer o Brasil também para sua linha de comando.
-*   **Sintaxe Melhorada:** Destaque especial para números, booleanos e palavras-chave de controle.
+    *   **Verde (#009c3b):** Utilizado em strings, comentários, barra de status e seleções.
+    *   **Amarelo (#ffdf00):** Utilizado em palavras-chave, números e constantes.
+    *   **Branco (#ffffff):** Utilizado para texto geral, variáveis e funções, garantindo legibilidade e harmonia (como as estrelas no céu azul).
+*   **Terminal Integrado:** Cores configuradas para máxima aderência ao tema.
+*   **Sintaxe Melhorada:** Contraste otimizado para longas sessões de código.
 
 ## Instalação
 

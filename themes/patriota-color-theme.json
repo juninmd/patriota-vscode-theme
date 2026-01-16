@@ -2,22 +2,22 @@
 	"name": "patriota",
 	"colors": {
 		"activityBar.background": "#009c3b",
-		"activityBar.activeBackground": "#007a2d",
+		"activityBar.activeBackground": "#002776",
 		"activityBar.activeBorder": "#ffdf00",
 		"activityBar.activeFocusBorder": "#ffdf00",
 		"activityBar.foreground": "#ffffff",
-		"activityBar.inactiveForeground": "#e1e4e8aa",
+		"activityBar.inactiveForeground": "#ffffffaa",
 		"activityBarBadge.background": "#ffdf00",
 		"activityBarBadge.foreground": "#002776",
 
 		"sideBar.background": "#002776",
 		"sideBar.foreground": "#ffffff",
 		"sideBarTitle.foreground": "#ffdf00",
-		"sideBarSectionHeader.background": "#001b52",
+		"sideBarSectionHeader.background": "#002776",
 		"sideBarSectionHeader.foreground": "#ffdf00",
 
-		"editor.background": "#00152e",
-		"editor.foreground": "#e1e4e8",
+		"editor.background": "#002776",
+		"editor.foreground": "#ffffff",
 		"editorLineNumber.foreground": "#ffffff50",
 		"editorLineNumber.activeForeground": "#009c3b",
 		"editorCursor.foreground": "#ffdf00",
@@ -32,7 +32,7 @@
 
 		"titleBar.activeBackground": "#002776",
 		"titleBar.activeForeground": "#ffdf00",
-		"titleBar.inactiveBackground": "#001b52",
+		"titleBar.inactiveBackground": "#002776",
 		"titleBar.inactiveForeground": "#ffffff88",
 
 		"list.activeSelectionBackground": "#009c3b",
@@ -41,34 +41,34 @@
 		"list.hoverBackground": "#009c3b44",
 		"list.inactiveSelectionBackground": "#009c3b88",
 
-		"tab.activeBackground": "#00152e",
+		"tab.activeBackground": "#002776",
 		"tab.activeForeground": "#ffdf00",
 		"tab.inactiveBackground": "#002776",
 		"tab.inactiveForeground": "#ffffffaa",
 		"tab.activeBorderTop": "#ffdf00",
 
-		"input.background": "#00152e",
-		"input.foreground": "#e1e4e8",
+		"input.background": "#002776",
+		"input.foreground": "#ffffff",
 		"input.border": "#009c3b",
 		"input.placeholderForeground": "#ffffff88",
 
 		"terminal.foreground": "#ffffff",
-		"terminal.background": "#00152e",
+		"terminal.background": "#002776",
 		"terminal.ansiBlack": "#000000",
 		"terminal.ansiRed": "#ff5555",
 		"terminal.ansiGreen": "#009c3b",
 		"terminal.ansiYellow": "#ffdf00",
-		"terminal.ansiBlue": "#002776",
-		"terminal.ansiMagenta": "#d16d9e",
-		"terminal.ansiCyan": "#00ffa2",
-		"terminal.ansiWhite": "#e1e4e8",
-		"terminal.ansiBrightBlack": "#6a737d",
-		"terminal.ansiBrightRed": "#ff8888",
-		"terminal.ansiBrightGreen": "#00ff66",
-		"terminal.ansiBrightYellow": "#ffff44",
+		"terminal.ansiBlue": "#4da6ff",
+		"terminal.ansiMagenta": "#ffffff",
+		"terminal.ansiCyan": "#ffffff",
+		"terminal.ansiWhite": "#ffffff",
+		"terminal.ansiBrightBlack": "#ffffff55",
+		"terminal.ansiBrightRed": "#ff5555",
+		"terminal.ansiBrightGreen": "#009c3b",
+		"terminal.ansiBrightYellow": "#ffdf00",
 		"terminal.ansiBrightBlue": "#4da6ff",
-		"terminal.ansiBrightMagenta": "#ff85c2",
-		"terminal.ansiBrightCyan": "#aaffff",
+		"terminal.ansiBrightMagenta": "#ffffff",
+		"terminal.ansiBrightCyan": "#ffffff",
 		"terminal.ansiBrightWhite": "#ffffff",
 
 		"progressBar.background": "#ffdf00",
@@ -79,11 +79,11 @@
 		"debugToolBar.background": "#002776",
 		"button.background": "#009c3b",
 		"button.foreground": "#ffffff",
-		"button.hoverBackground": "#007a2d",
+		"button.hoverBackground": "#002776",
 
-		"dropdown.background": "#00152e",
+		"dropdown.background": "#002776",
 		"dropdown.border": "#009c3b",
-		"dropdown.foreground": "#e1e4e8"
+		"dropdown.foreground": "#ffffff"
 	},
 	"semanticHighlighting": true,
 	"tokenColors": [
@@ -117,7 +117,7 @@
 				"meta.function-call"
 			],
 			"settings": {
-				"foreground": "#00ffa2"
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -146,7 +146,7 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"foreground": "#8db4d0",
+				"foreground": "#009c3b",
 				"fontStyle": "italic"
 			}
 		},
@@ -184,7 +184,7 @@
 				"support.type"
 			],
 			"settings": {
-				"foreground": "#4da6ff",
+				"foreground": "#ffffff",
 				"fontStyle": "bold"
 			}
 		},
@@ -205,7 +205,7 @@
 				"entity.other.attribute-name"
 			],
 			"settings": {
-				"foreground": "#00ffa2"
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -219,7 +219,7 @@
 			"name": "JSON Key - Level 0",
 			"scope": "source.json meta.structure.dictionary.json support.type.property-name.json",
 			"settings": {
-				"foreground": "#4da6ff"
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -237,7 +237,7 @@
 				"string.other.link"
 			],
 			"settings": {
-				"foreground": "#4da6ff"
+				"foreground": "#ffffff"
 			}
 		}
 	]
