@@ -1,7 +1,7 @@
 {
   "name": "patriota",
   "displayName": "patriota",
-  "description": "Tema orgulho do Brasil!",
+  "description": "O melhor tema para programadores brasileiros! Cores vibrantes da nossa bandeira para inspirar seu código.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.72.0"
