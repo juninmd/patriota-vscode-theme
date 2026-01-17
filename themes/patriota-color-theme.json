@@ -23,6 +23,10 @@
 		"editorCursor.foreground": "#ffdf00",
 		"editor.selectionBackground": "#009c3b55",
 		"editor.lineHighlightBackground": "#009c3b22",
+		"editor.wordHighlightBackground": "#ffdf0033",
+		"editor.wordHighlightStrongBackground": "#009c3b33",
+		"editorBracketMatch.background": "#002776",
+		"editorBracketMatch.border": "#ffdf00",
 
 		"statusBar.background": "#009c3b",
 		"statusBar.foreground": "#ffffff",
@@ -83,7 +87,63 @@
 
 		"dropdown.background": "#002776",
 		"dropdown.border": "#009c3b",
-		"dropdown.foreground": "#ffffff"
+		"dropdown.foreground": "#ffffff",
+
+		"editorGroupHeader.tabsBackground": "#002776",
+		"editorGroupHeader.tabsBorder": "#009c3b",
+
+		"panel.background": "#002776",
+		"panel.border": "#009c3b",
+		"panelTitle.activeBorder": "#ffdf00",
+		"panelTitle.activeForeground": "#ffffff",
+		"panelTitle.inactiveForeground": "#ffffff88",
+
+		"notifications.background": "#002776",
+		"notifications.foreground": "#ffffff",
+		"notifications.border": "#009c3b",
+		"notificationLink.foreground": "#ffdf00",
+
+		"editorWidget.background": "#002776",
+		"editorWidget.border": "#009c3b",
+		"editorSuggestWidget.background": "#002776",
+		"editorSuggestWidget.border": "#009c3b",
+		"editorSuggestWidget.foreground": "#ffffff",
+		"editorSuggestWidget.highlightForeground": "#ffdf00",
+		"editorSuggestWidget.selectedBackground": "#009c3b44",
+
+		"editorHoverWidget.background": "#002776",
+		"editorHoverWidget.border": "#ffdf00",
+
+		"breadcrumb.foreground": "#ffffff88",
+		"breadcrumb.focusForeground": "#ffffff",
+		"breadcrumb.activeSelectionForeground": "#ffdf00",
+		"breadcrumbPicker.background": "#002776",
+
+		"scrollbarSlider.background": "#009c3b44",
+		"scrollbarSlider.hoverBackground": "#009c3b88",
+		"scrollbarSlider.activeBackground": "#009c3b",
+
+		"gitDecoration.addedResourceForeground": "#009c3b",
+		"gitDecoration.modifiedResourceForeground": "#ffdf00",
+		"gitDecoration.deletedResourceForeground": "#ffffff",
+		"gitDecoration.untrackedResourceForeground": "#009c3b",
+		"gitDecoration.ignoredResourceForeground": "#ffffff55",
+
+		"diffEditor.insertedTextBackground": "#009c3b33",
+		"diffEditor.removedTextBackground": "#ffffff33",
+
+		"peekView.border": "#ffdf00",
+		"peekViewEditor.background": "#002776",
+		"peekViewEditor.matchHighlightBackground": "#009c3b44",
+		"peekViewResult.background": "#002776",
+		"peekViewResult.fileForeground": "#ffffff",
+		"peekViewResult.lineForeground": "#ffffff88",
+		"peekViewResult.matchHighlightBackground": "#009c3b44",
+		"peekViewResult.selectionBackground": "#009c3b44",
+		"peekViewResult.selectionForeground": "#ffffff",
+		"peekViewTitle.background": "#002776",
+		"peekViewTitleDescription.foreground": "#ffffff88",
+		"peekViewTitleLabel.foreground": "#ffdf00"
 	},
 	"semanticHighlighting": true,
 	"tokenColors": [
@@ -92,7 +152,8 @@
 			"scope": [
 				"keyword",
 				"storage.type",
-				"storage.modifier"
+				"storage.modifier",
+				"variable.language"
 			],
 			"settings": {
 				"foreground": "#ffdf00",
@@ -238,6 +299,14 @@
 			],
 			"settings": {
 				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "Markdown - Blockquote",
+			"scope": "markup.quote",
+			"settings": {
+				"foreground": "#009c3b",
+				"fontStyle": "italic"
 			}
 		}
 	]
