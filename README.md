@@ -8,11 +8,12 @@ O tema utiliza as cores vibrantes da bandeira do Brasil para criar um ambiente d
 
 *   **Fundo (Azul Oficial):** Baseado no céu estrelado da bandeira (`#002776`), oferecendo o verdadeiro espírito patriota.
 *   **Destaques (Verde e Amarelo):**
-    *   **Verde (#009c3b):** Utilizado em strings, comentários, barra de status e seleções.
-    *   **Amarelo (#ffdf00):** Utilizado em palavras-chave, números e constantes.
-    *   **Branco (#ffffff):** Utilizado para texto geral, variáveis e funções, garantindo legibilidade e harmonia (como as estrelas no céu azul).
+    *   **Verde (#009c3b):** Utilizado em strings, comentários, barra de status, bordas e seleções.
+    *   **Amarelo (#ffdf00):** Utilizado em palavras-chave, números, constantes e elementos ativos.
+    *   **Branco (#ffffff):** Utilizado para texto geral, variáveis e funções (agora em negrito!), garantindo legibilidade e harmonia (como as estrelas no céu azul).
+*   **Interface Refinada:** Bordas e guias de indentação nas cores nacionais para uma experiência imersiva.
 *   **Terminal Integrado:** Cores configuradas para máxima aderência ao tema.
-*   **Sintaxe Melhorada:** Contraste otimizado para longas sessões de código.
+*   **Sintaxe Melhorada:** Contraste otimizado para longas sessões de código com destaque semântico.
 
 ## Instalação
 

@@ -7,11 +7,13 @@
 		"activityBar.activeFocusBorder": "#ffdf00",
 		"activityBar.foreground": "#ffffff",
 		"activityBar.inactiveForeground": "#ffffffaa",
+		"activityBar.border": "#009c3b",
 		"activityBarBadge.background": "#ffdf00",
 		"activityBarBadge.foreground": "#002776",
 
 		"sideBar.background": "#002776",
 		"sideBar.foreground": "#ffffff",
+		"sideBar.border": "#009c3b",
 		"sideBarTitle.foreground": "#ffdf00",
 		"sideBarSectionHeader.background": "#002776",
 		"sideBarSectionHeader.foreground": "#ffdf00",
@@ -22,15 +24,21 @@
 		"editorLineNumber.activeForeground": "#009c3b",
 		"editorCursor.foreground": "#ffdf00",
 		"editor.selectionBackground": "#009c3b55",
+		"editor.selectionHighlightBackground": "#009c3b33",
 		"editor.lineHighlightBackground": "#009c3b22",
 		"editor.wordHighlightBackground": "#ffdf0033",
 		"editor.wordHighlightStrongBackground": "#009c3b33",
+		"editor.linkedEditingBackground": "#ffdf0044",
 		"editorBracketMatch.background": "#002776",
 		"editorBracketMatch.border": "#ffdf00",
 
 		"editor.findMatchBackground": "#ffdf00aa",
 		"editor.findMatchHighlightBackground": "#ffdf0055",
 		"editor.findRangeHighlightBackground": "#ffffff22",
+
+		"editorIndentGuide.background": "#ffffff22",
+		"editorIndentGuide.activeBackground": "#ffdf00",
+		"editorRuler.foreground": "#ffffff22",
 
 		"editorBracketHighlight.foreground1": "#ffdf00",
 		"editorBracketHighlight.foreground2": "#ffffff",
@@ -43,6 +51,7 @@
 
 		"statusBar.background": "#009c3b",
 		"statusBar.foreground": "#ffffff",
+		"statusBar.border": "#ffdf00",
 		"statusBar.debuggingBackground": "#ffdf00",
 		"statusBar.debuggingForeground": "#002776",
 		"statusBar.noFolderBackground": "#002776",
@@ -104,6 +113,7 @@
 		"dropdown.border": "#009c3b",
 		"dropdown.foreground": "#ffffff",
 
+		"editorGroup.border": "#009c3b",
 		"editorGroupHeader.tabsBackground": "#002776",
 		"editorGroupHeader.tabsBorder": "#009c3b",
 
@@ -205,7 +215,8 @@
 				"meta.function-call"
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#ffffff",
+				"fontStyle": "bold"
 			}
 		},
 		{
