@@ -20,6 +20,8 @@
 
 		"editor.background": "#002776",
 		"editor.foreground": "#ffffff",
+		"textLink.foreground": "#ffdf00",
+		"textLink.activeForeground": "#009c3b",
 		"editorLineNumber.foreground": "#ffffff50",
 		"editorLineNumber.activeForeground": "#009c3b",
 		"editorCursor.foreground": "#ffdf00",
@@ -60,6 +62,18 @@
 		"titleBar.activeForeground": "#ffdf00",
 		"titleBar.inactiveBackground": "#002776",
 		"titleBar.inactiveForeground": "#ffffff88",
+
+		"menu.background": "#002776",
+		"menu.foreground": "#ffffff",
+		"menu.selectionBackground": "#009c3b",
+		"menu.selectionForeground": "#ffffff",
+		"menu.border": "#009c3b",
+		"menu.separatorBackground": "#009c3b",
+
+		"commandCenter.background": "#002776",
+		"commandCenter.border": "#009c3b",
+		"commandCenter.foreground": "#ffffff",
+		"commandCenter.activeBackground": "#009c3b",
 
 		"list.activeSelectionBackground": "#009c3b",
 		"list.activeSelectionForeground": "#ffffff",
@@ -153,13 +167,13 @@
 
 		"gitDecoration.addedResourceForeground": "#009c3b",
 		"gitDecoration.modifiedResourceForeground": "#ffdf00",
-		"gitDecoration.deletedResourceForeground": "#ffffff",
+		"gitDecoration.deletedResourceForeground": "#ff5555",
 		"gitDecoration.untrackedResourceForeground": "#009c3b",
 		"gitDecoration.ignoredResourceForeground": "#ffffff55",
 		"gitDecoration.conflictingResourceForeground": "#ff5555",
 
 		"diffEditor.insertedTextBackground": "#009c3b33",
-		"diffEditor.removedTextBackground": "#ffffff33",
+		"diffEditor.removedTextBackground": "#ff555533",
 
 		"peekView.border": "#ffdf00",
 		"peekViewEditor.background": "#002776",
@@ -323,10 +337,20 @@
 		},
 		{
 			"name": "Markdown - Headings",
-			"scope": "markup.heading",
+			"scope": [
+				"markup.heading",
+				"entity.name.section"
+			],
 			"settings": {
 				"foreground": "#ffdf00",
 				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markdown - Lists",
+			"scope": "markup.list",
+			"settings": {
+				"foreground": "#ffdf00"
 			}
 		},
 		{

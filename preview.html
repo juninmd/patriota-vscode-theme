@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    :root {
+
+    --activityBar-bg: #009c3b;
+    --activityBar-fg: #ffffff;
+    --activityBar-border: #009c3b;
+
+    --sideBar-bg: #002776;
+    --sideBar-fg: #ffffff;
+    --sideBar-border: #009c3b;
+    --sideBar-header-fg: #ffdf00;
+
+    --editor-bg: #002776;
+    --editor-fg: #ffffff;
+
+    --statusBar-bg: #009c3b;
+    --statusBar-fg: #ffffff;
+    --statusBar-border: #ffdf00;
+
+    --tab-active-bg: #002776;
+    --tab-active-fg: #ffdf00;
+    --tab-inactive-bg: #002776;
+    --tab-inactive-fg: #ffffffaa;
+    --tab-border: #ffdf00;
+
+    --line-number-fg: #ffffff50;
+
+        --font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    }
+    body { margin: 0; padding: 0; display: flex; height: 100vh; font-family: -apple-system, BlinkMacSystemFont, sans-serif; overflow: hidden; background: #000; }
+
+    .window { display: flex; flex-direction: column; height: 100%; width: 100%; }
+
+    .main-container { display: flex; flex: 1; overflow: hidden; }
+
+    .activity-bar { width: 50px; background: var(--activityBar-bg); display: flex; flex-direction: column; align-items: center; padding-top: 10px; border-right: 1px solid var(--activityBar-border); }
+    .icon { width: 24px; height: 24px; background: var(--activityBar-fg); opacity: 0.4; margin-bottom: 25px; -webkit-mask-size: cover; }
+    .icon.active { opacity: 1; border-left: 2px solid var(--tab-border); }
+
+    .side-bar { width: 200px; background: var(--sideBar-bg); color: var(--sideBar-fg); border-right: 1px solid var(--sideBar-border); display: flex; flex-direction: column; }
+    .side-bar-header { padding: 10px 20px; font-size: 11px; text-transform: uppercase; font-weight: bold; display: flex; justify-content: space-between; align-items: center; color: var(--sideBar-header-fg); }
+    .file-tree { padding: 0; }
+    .file-item { padding: 4px 20px; font-size: 13px; display: flex; align-items: center; cursor: pointer; }
+    .file-item:hover { background: #ffffff11; }
+    .file-item.selected { background: #ffffff22; color: #fff; }
+    .file-icon { width: 14px; height: 14px; margin-right: 6px; display: inline-block; background: #888; }
+
+    .editor-group { flex: 1; display: flex; flex-direction: column; background: var(--editor-bg); }
+
+    .tabs { height: 35px; background: var(--tab-inactive-bg); display: flex; overflow-x: auto; }
+    .tab { padding: 0 15px; display: flex; align-items: center; font-size: 13px; color: var(--tab-inactive-fg); border-right: 1px solid #00000022; cursor: pointer; min-width: 100px; }
+    .tab.active { background: var(--tab-active-bg); color: var(--tab-active-fg); border-top: 2px solid var(--tab-border); }
+
+    .editor-container { flex: 1; display: flex; font-family: var(--font-family); font-size: 14px; padding-top: 10px; overflow: hidden; }
+    .gutter { width: 50px; text-align: right; padding-right: 15px; color: var(--line-number-fg); user-select: none; line-height: 1.5; }
+    .code-area { color: var(--editor-fg); white-space: pre; line-height: 1.5; }
+
+    .status-bar { height: 22px; background: var(--statusBar-bg); color: var(--statusBar-fg); border-top: 1px solid var(--statusBar-border); display: flex; align-items: center; padding: 0 10px; font-size: 12px; justify-content: space-between; }
+    .status-item { margin-right: 15px; display: flex; align-items: center; }
+
+    /* Syntax Highlighting */
+    .keyword { color: #ffdf00; font-weight: bold; }.control { color: #ffdf00; font-weight: bold; font-style: italic; }.string { color: #009c3b; }.function { color: #ffffff; font-weight: bold; }.comment { color: #009c3b; font-style: italic; }.number { color: #ffdf00; }.class { color: #ffffff; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<div class="window">
+    <div class="main-container">
+        <!-- Activity Bar -->
+        <div class="activity-bar">
+            <div class="icon active" style="background: var(--activityBar-fg);"></div> <!-- Files -->
+            <div class="icon" style="background: var(--activityBar-fg);"></div> <!-- Search -->
+            <div class="icon" style="background: var(--activityBar-fg);"></div> <!-- Git -->
+            <div class="icon" style="background: var(--activityBar-fg);"></div> <!-- Debug -->
+        </div>
+
+        <!-- Side Bar -->
+        <div class="side-bar">
+            <div class="side-bar-header">Explorer</div>
+            <div class="file-tree">
+                <div class="side-bar-header" style="padding-left: 10px;">PATRIOTA-THEME</div>
+                <div class="file-item selected"><span class="file-icon" style="background: #e37933;"></span>main.py</div>
+                <div class="file-item"><span class="file-icon" style="background: #cbcb41;"></span>utils.js</div>
+                <div class="file-item"><span class="file-icon" style="background: #4d78cc;"></span>styles.css</div>
+                <div class="file-item"><span class="file-icon" style="background: #ccc;"></span>README.md</div>
+            </div>
+        </div>
+
+        <!-- Editor Area -->
+        <div class="editor-group">
+            <div class="tabs">
+                <div class="tab active">main.py</div>
+                <div class="tab">utils.js</div>
+                <div class="tab">styles.css</div>
+            </div>
+
+            <div class="editor-container">
+                <div class="gutter">
+                    1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11
+                </div>
+                <div class="code-area">
+<span class="keyword">import</span> <span class="class">math</span>
+
+<span class="comment"># Verifica se um número é patriota (exemplo)</span>
+<span class="keyword">def</span> <span class="function">verificar_brasilidade</span>(<span class="class">valor</span>):
+    <span class="control">if</span> <span class="class">valor</span> >= <span class="number">100</span>:
+        <span class="control">return</span> <span class="keyword">True</span>
+
+    <span class="keyword">print</span>(<span class="string">f"Analisando o valor: {valor}"</span>)
+
+    <span class="class">resultado</span> = <span class="class">math</span>.<span class="function">sqrt</span>(<span class="class">valor</span>)
+    <span class="control">return</span> <span class="class">resultado</span> > <span class="number">10</span>
+
+<span class="comment">/*
+   Este é um comentário longo
+   para demonstrar o itálico
+*/</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <div class="status-item"><span style="margin-right:5px">master*</span></div>
+        <div class="status-item">
+            <span style="margin-right: 15px;">Ln 11, Col 1</span>
+            <span style="margin-right: 15px;">UTF-8</span>
+            <span>Python</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
