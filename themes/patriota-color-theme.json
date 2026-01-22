@@ -14,7 +14,7 @@
 		"sideBar.foreground": "#ffffff",
 		"sideBar.border": "#009c3b",
 		"sideBarTitle.foreground": "#ffdf00",
-		"sideBarSectionHeader.background": "#002060",
+		"sideBarSectionHeader.background": "#009c3b",
 		"sideBarSectionHeader.foreground": "#ffdf00",
 
 		"editor.background": "#002776",
@@ -26,7 +26,7 @@
 		"editor.selectionBackground": "#ffdf0044",
 		"editor.selectionHighlightBackground": "#ffffff22",
 		"editor.inactiveSelectionBackground": "#ffdf0022",
-		"editor.lineHighlightBackground": "#ffffff10",
+		"editor.lineHighlightBackground": "#009c3b22",
 		"editor.lineHighlightBorder": "#ffffff00",
 
 		"editor.wordHighlightBackground": "#009c3b44",
@@ -38,7 +38,7 @@
 		"editorBracketHighlight.foreground2": "#ffffff",
 		"editorBracketHighlight.foreground3": "#009c3b",
 
-		"editorIndentGuide.background": "#ffffff22",
+		"editorIndentGuide.background": "#ffffff33",
 		"editorIndentGuide.activeBackground": "#ffdf00",
 		"editorRuler.foreground": "#ffffff22",
 
@@ -78,7 +78,7 @@
 		"list.inactiveSelectionForeground": "#ffffff",
 		"list.focusBackground": "#009c3b",
 		"list.focusForeground": "#ffffff",
-		"list.hoverBackground": "#ffffff11",
+		"list.hoverBackground": "#009c3b22",
 		"list.highlightForeground": "#ffdf00",
 		"list.errorForeground": "#ff5555",
 		"list.warningForeground": "#ffdf00",
@@ -169,8 +169,8 @@
 		"breadcrumb.activeSelectionForeground": "#ffdf00",
 		"breadcrumbPicker.background": "#002776",
 
-		"scrollbarSlider.background": "#ffffff22",
-		"scrollbarSlider.hoverBackground": "#ffffff44",
+		"scrollbarSlider.background": "#009c3b44",
+		"scrollbarSlider.hoverBackground": "#009c3b88",
 		"scrollbarSlider.activeBackground": "#ffdf00aa",
 
 		"gitDecoration.addedResourceForeground": "#009c3b",
