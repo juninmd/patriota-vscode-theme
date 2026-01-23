@@ -190,6 +190,32 @@
 		"peekViewTitle.background": "#002776",
 		"peekViewTitleLabel.foreground": "#ffdf00",
 
+		"welcomePage.buttonBackground": "#009c3b",
+		"welcomePage.buttonHoverBackground": "#007a2e",
+		"welcomePage.progress.background": "#009c3b",
+		"welcomePage.tileBackground": "#002060",
+		"welcomePage.background": "#002776",
+		"walkThrough.embeddedEditorBackground": "#002060",
+
+		"checkbox.background": "#002060",
+		"checkbox.foreground": "#ffffff",
+		"checkbox.border": "#009c3b",
+		"checkbox.selectBackground": "#009c3b",
+		"checkbox.selectBorder": "#ffdf00",
+
+		"commandCenter.foreground": "#ffffff",
+		"commandCenter.activeBackground": "#ffffff22",
+		"commandCenter.border": "#009c3b",
+
+		"keybindingLabel.background": "#009c3b44",
+		"keybindingLabel.foreground": "#ffdf00",
+		"keybindingLabel.border": "#ffdf0044",
+		"keybindingLabel.bottomBorder": "#ffdf0044",
+
+		"editor.findMatchBackground": "#ffdf0066",
+		"editor.findMatchHighlightBackground": "#ffdf0033",
+		"editorGutter.background": "#002776",
+
 		"minimap.findMatchHighlight": "#ffdf00",
 		"minimap.selectionHighlight": "#ffffff44",
 		"minimapGutter.addedBackground": "#009c3b",
