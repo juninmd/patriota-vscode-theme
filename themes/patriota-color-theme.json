@@ -5,6 +5,7 @@
 		"activityBar.foreground": "#ffffff",
 		"activityBar.inactiveForeground": "#ffffffcc",
 		"activityBar.activeBackground": "#002776",
+		"activityBar.activeForeground": "#ffdf00",
 		"activityBar.activeBorder": "#ffdf00",
 		"activityBar.border": "#009c3b",
 		"activityBarBadge.background": "#ffdf00",
@@ -12,7 +13,7 @@
 
 		"sideBar.background": "#002776",
 		"sideBar.foreground": "#ffffff",
-		"sideBar.border": "#009c3b",
+		"sideBar.border": "#ffdf00",
 		"sideBarTitle.foreground": "#ffdf00",
 		"sideBarSectionHeader.background": "#009c3b",
 		"sideBarSectionHeader.foreground": "#ffdf00",
@@ -78,7 +79,7 @@
 		"list.inactiveSelectionForeground": "#ffffff",
 		"list.focusBackground": "#009c3b",
 		"list.focusForeground": "#ffffff",
-		"list.hoverBackground": "#009c3b22",
+		"list.hoverBackground": "#009c3b44",
 		"list.highlightForeground": "#ffdf00",
 		"list.errorForeground": "#ff5555",
 		"list.warningForeground": "#ffdf00",
@@ -172,8 +173,8 @@
 		"breadcrumb.activeSelectionForeground": "#ffdf00",
 		"breadcrumbPicker.background": "#002776",
 
-		"scrollbarSlider.background": "#009c3b44",
-		"scrollbarSlider.hoverBackground": "#009c3b88",
+		"scrollbarSlider.background": "#ffdf0033",
+		"scrollbarSlider.hoverBackground": "#ffdf0066",
 		"scrollbarSlider.activeBackground": "#ffdf00aa",
 
 		"gitDecoration.addedResourceForeground": "#009c3b",
@@ -218,6 +219,12 @@
 		"editor.findMatchBackground": "#ffdf0066",
 		"editor.findMatchHighlightBackground": "#ffdf0033",
 		"editorGutter.background": "#002776",
+
+		"editorOverviewRuler.addedForeground": "#009c3b",
+		"editorOverviewRuler.modifiedForeground": "#ffdf00",
+		"editorOverviewRuler.deletedForeground": "#ff5555",
+		"editorOverviewRuler.errorForeground": "#ff5555",
+		"editorOverviewRuler.warningForeground": "#ffdf00",
 
 		"minimap.findMatchHighlight": "#ffdf00",
 		"minimap.selectionHighlight": "#ffffff44",
@@ -301,7 +308,7 @@
 				"string"
 			],
 			"settings": {
-				"foreground": "#009c3b"
+				"foreground": "#4cea7a"
 			}
 		},
 		{
@@ -319,7 +326,7 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"foreground": "#009c3b",
+				"foreground": "#4cea7a",
 				"fontStyle": "italic"
 			}
 		},
