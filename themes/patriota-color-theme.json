@@ -102,11 +102,12 @@
 		"terminal.foreground": "#ffffff",
 		"terminalCursor.background": "#ffdf00",
 		"terminalCursor.foreground": "#000000",
-		"terminal.ansiBlack": "#000000",
+		"terminal.ansiBlack": "#001133",
+		"terminal.ansiBrightBlack": "#808080",
 		"terminal.ansiBlue": "#4da6ff",
 		"terminal.ansiBrightBlue": "#4da6ff",
-		"terminal.ansiCyan": "#009c3b",
-		"terminal.ansiBrightCyan": "#009c3b",
+		"terminal.ansiCyan": "#4cea7a",
+		"terminal.ansiBrightCyan": "#4cea7a",
 		"terminal.ansiGreen": "#00ff60",
 		"terminal.ansiBrightGreen": "#00ff60",
 		"terminal.ansiMagenta": "#ffdf00",
@@ -233,6 +234,45 @@
 		"minimapGutter.deletedBackground": "#ff5555"
 	},
 	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"class": {
+			"foreground": "#ffffff",
+			"fontStyle": "bold"
+		},
+		"interface": {
+			"foreground": "#ffffff",
+			"fontStyle": "italic"
+		},
+		"type": {
+			"foreground": "#ffffff",
+			"fontStyle": "bold"
+		},
+		"enum": {
+			"foreground": "#ffffff",
+			"fontStyle": "bold"
+		},
+		"enumMember": {
+			"foreground": "#ffdf00",
+			"fontStyle": "bold"
+		},
+		"function": {
+			"foreground": "#ffffff",
+			"fontStyle": "bold"
+		},
+		"variable": "#ffffff",
+		"parameter": {
+			"foreground": "#ffffff",
+			"fontStyle": "italic"
+		},
+		"property": "#ffffff",
+		"comment": {
+			"foreground": "#4cea7a",
+			"fontStyle": "italic"
+		},
+		"string": "#4cea7a",
+		"keyword": "#ffdf00",
+		"number": "#ffdf00"
+	},
 	"tokenColors": [
 		{
 			"name": "Keywords",
