@@ -41,7 +41,8 @@
 
 		"editorIndentGuide.background": "#ffffff33",
 		"editorIndentGuide.activeBackground": "#ffdf00",
-		"editorRuler.foreground": "#ffffff22",
+		"editorRuler.foreground": "#009c3b",
+		"editorWhitespace.foreground": "#ffffff22",
 
 		"editorLink.activeForeground": "#009c3b",
 		"textLink.foreground": "#ffdf00",
@@ -124,7 +125,7 @@
 
 		"progressBar.background": "#ffdf00",
 
-		"focusBorder": "#009c3b",
+		"focusBorder": "#ffdf00",
 		"pickerGroup.border": "#009c3b",
 		"pickerGroup.foreground": "#ffdf00",
 
@@ -181,7 +182,7 @@
 		"gitDecoration.addedResourceForeground": "#009c3b",
 		"gitDecoration.modifiedResourceForeground": "#ffdf00",
 		"gitDecoration.deletedResourceForeground": "#ff5555",
-		"gitDecoration.untrackedResourceForeground": "#009c3b",
+		"gitDecoration.untrackedResourceForeground": "#4cea7a",
 		"gitDecoration.ignoredResourceForeground": "#ffffff44",
 		"gitDecoration.conflictingResourceForeground": "#ff5555",
 
@@ -231,7 +232,17 @@
 		"minimap.selectionHighlight": "#ffffff44",
 		"minimapGutter.addedBackground": "#009c3b",
 		"minimapGutter.modifiedBackground": "#ffdf00",
-		"minimapGutter.deletedBackground": "#ff5555"
+		"minimapGutter.deletedBackground": "#ff5555",
+
+		"notebook.cellBorderColor": "#009c3b",
+		"notebook.focusedCellBorder": "#ffdf00",
+
+		"charts.red": "#ff5555",
+		"charts.blue": "#002776",
+		"charts.yellow": "#ffdf00",
+		"charts.green": "#009c3b",
+		"charts.orange": "#e6b800",
+		"charts.purple": "#4da6ff"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
