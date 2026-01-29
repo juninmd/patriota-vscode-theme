@@ -258,7 +258,20 @@
 		"inputValidation.infoBackground": "#002776",
 		"inputValidation.infoBorder": "#009c3b",
 		"inputValidation.warningBackground": "#e6b800",
-		"inputValidation.warningBorder": "#ffffff"
+		"inputValidation.warningBorder": "#ffffff",
+
+		"activityBar.dropBorder": "#ffdf00",
+		"sideBar.dropBackground": "#009c3b44",
+		"editorGroup.dropBackground": "#009c3b44",
+		"banner.background": "#002776",
+		"banner.foreground": "#ffdf00",
+		"statusBarItem.remoteBackground": "#009c3b",
+		"statusBarItem.remoteForeground": "#ffffff",
+		"list.dropBackground": "#009c3b44",
+		"minimapSlider.background": "#ffdf0033",
+		"minimapSlider.hoverBackground": "#ffdf0066",
+		"minimapSlider.activeBackground": "#ffdf00aa",
+		"welcomePage.tileHoverBackground": "#009c3b44"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
