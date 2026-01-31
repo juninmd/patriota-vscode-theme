@@ -253,7 +253,7 @@
 
 		"minimap.background": "#002776",
 		"minimap.findMatchHighlight": "#ffdf00",
-		"minimap.selectionHighlight": "#ffffff44",
+		"minimap.selectionHighlight": "#ffdf0044",
 		"minimapGutter.addedBackground": "#009c3b",
 		"minimapGutter.modifiedBackground": "#ffdf00",
 		"minimapGutter.deletedBackground": "#ff5555",
@@ -278,7 +278,46 @@
 
 		"activityBar.dropBorder": "#ffdf00",
 		"banner.background": "#002776",
-		"banner.foreground": "#ffdf00"
+		"banner.foreground": "#ffdf00",
+
+		"editorInlayHint.background": "#009c3b44",
+		"editorInlayHint.foreground": "#ffffff",
+		"editorInlayHint.typeBackground": "#002060",
+		"editorInlayHint.typeForeground": "#ffdf00",
+
+		"editorCodeLens.foreground": "#009c3baa",
+
+		"merge.currentHeaderBackground": "#009c3b88",
+		"merge.currentContentBackground": "#009c3b22",
+		"merge.incomingHeaderBackground": "#ffdf0088",
+		"merge.incomingContentBackground": "#ffdf0022",
+
+		"debugIcon.breakpointForeground": "#ff5555",
+		"debugIcon.startForeground": "#009c3b",
+		"debugIcon.pauseForeground": "#ffdf00",
+		"debugIcon.stopForeground": "#ff5555",
+		"debugIcon.restartForeground": "#4cea7a",
+		"debugIcon.stepOverForeground": "#ffdf00",
+		"debugIcon.stepIntoForeground": "#ffdf00",
+		"debugIcon.stepOutForeground": "#ffdf00",
+		"debugIcon.continueForeground": "#009c3b",
+
+		"debugConsole.infoForeground": "#009c3b",
+		"debugConsole.warningForeground": "#ffdf00",
+		"debugConsole.errorForeground": "#ff5555",
+		"debugConsole.sourceForeground": "#ffffff",
+		"debugConsoleInputIcon.foreground": "#ffdf00",
+
+		"symbolIcon.classForeground": "#ffdf00",
+		"symbolIcon.functionForeground": "#009c3b",
+		"symbolIcon.variableForeground": "#ffffff",
+		"symbolIcon.constantForeground": "#ffdf00",
+		"symbolIcon.interfaceForeground": "#4cea7a",
+
+		"settings.headerForeground": "#ffdf00",
+		"settings.modifiedItemIndicator": "#009c3b",
+
+		"notificationCenterHeader.background": "#002060"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
