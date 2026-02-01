@@ -2,7 +2,7 @@
   "name": "patriota",
   "displayName": "patriota",
   "description": "Mostre o seu lado brasileiro com as cores oficiais da nossa bandeira! O melhor tema para devs do Brasil.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.72.0"
   },
