@@ -62,6 +62,7 @@
 		"editorGutter.modifiedBackground": "#ffdf00",
 		"editorGutter.addedBackground": "#009c3b",
 		"editorGutter.deletedBackground": "#ff5555",
+		"editorGutter.foldingControlForeground": "#ffdf00",
 
 		"statusBar.background": "#009c3b",
 		"statusBar.foreground": "#ffffff",
@@ -98,6 +99,9 @@
 		"list.errorForeground": "#ff5555",
 		"list.warningForeground": "#ffdf00",
 		"list.dropBackground": "#009c3b44",
+		"list.filterMatchBackground": "#ffdf0044",
+		"list.filterMatchBorder": "#ffdf00",
+		"tree.indentGuidesStroke": "#ffffff33",
 
 		"tab.activeBackground": "#002776",
 		"tab.activeForeground": "#ffdf00",
@@ -121,6 +125,7 @@
 
 		"terminal.background": "#002776",
 		"terminal.foreground": "#ffffff",
+		"terminal.selectionBackground": "#ffdf0044",
 		"terminalCursor.background": "#ffdf00",
 		"terminalCursor.foreground": "#000000",
 		"terminal.ansiBlack": "#001133",
@@ -352,7 +357,7 @@
 		},
 		"property": "#ffffff",
 		"comment": {
-			"foreground": "#009c3b",
+			"foreground": "#3bdc75",
 			"fontStyle": "italic"
 		},
 		"string": "#4cea7a",
@@ -461,7 +466,7 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"foreground": "#009c3b",
+				"foreground": "#3bdc75",
 				"fontStyle": "italic"
 			}
 		},
