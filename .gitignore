@@ -1,2 +1,5 @@
 node_modules
 *.vsix
+preview.html
+theme_preview.png
+__pycache__/

@@ -2,6 +2,17 @@ import json
 import os
 from playwright.sync_api import sync_playwright
 
+"""
+generate_preview.py
+
+This script generates a visual preview of the VS Code theme.
+It performs the following steps:
+1. Reads the theme JSON file.
+2. Maps theme colors to CSS variables.
+3. Generates an HTML file simulating the VS Code UI.
+4. Uses Playwright to render the HTML and take a screenshot.
+"""
+
 # 1. Read Theme
 try:
     with open('themes/patriota-color-theme.json', 'r') as f:
@@ -14,6 +25,16 @@ colors = theme.get('colors', {})
 
 # 2. Map Colors to CSS Variables
 def get_color(key, default='#000000'):
+    """
+    Retrieves a color value from the theme dictionary.
+
+    Args:
+        key (str): The color key (e.g., 'activityBar.background').
+        default (str): The default color if the key is missing.
+
+    Returns:
+        str: The hex color string.
+    """
     return colors.get(key, default)
 
 css_vars = f"""
@@ -47,6 +68,15 @@ token_colors = theme.get('tokenColors', [])
 syntax_styles = ""
 
 def find_settings(scope_name):
+    """
+    Finds the settings for a given token scope.
+
+    Args:
+        scope_name (str): The name of the scope to search for.
+
+    Returns:
+        dict: The settings dictionary for the found scope, or empty dict.
+    """
     for token in token_colors:
         scope = token.get('scope')
         # Handle both string and list scopes
@@ -58,6 +88,16 @@ def find_settings(scope_name):
 
 # Helper to generate CSS class
 def gen_syntax_css(cls, scope):
+    """
+    Generates CSS for a syntax highlighting class based on the theme scope.
+
+    Args:
+        cls (str): The CSS class name.
+        scope (str): The TextMate scope to look up in the theme.
+
+    Returns:
+        str: The generated CSS string.
+    """
     settings = find_settings(scope)
     css = f".{cls} {{ "
     if 'foreground' in settings:
