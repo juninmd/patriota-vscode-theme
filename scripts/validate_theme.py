@@ -51,7 +51,7 @@ def validate_theme(filepath):
                     success = False
             # background is less common in tokenColors but possible
             if 'background' in settings:
-                 if not validate_hex(settings['background'], f"tokenColors[{i}].settings.background"):
+                if not validate_hex(settings['background'], f"tokenColors[{i}].settings.background"):
                     success = False
 
     if success:
