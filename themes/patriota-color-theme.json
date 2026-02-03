@@ -191,6 +191,7 @@
 
 		"editorWidget.background": "#002776",
 		"editorWidget.border": "#009c3b",
+		"editorWidget.resizeBorder": "#ffdf00",
 		"editorSuggestWidget.background": "#002776",
 		"editorSuggestWidget.border": "#009c3b",
 		"editorSuggestWidget.foreground": "#ffffff",
@@ -200,6 +201,7 @@
 		"editorHoverWidget.background": "#002776",
 		"editorHoverWidget.border": "#009c3b",
 
+		"breadcrumb.background": "#002060",
 		"breadcrumb.foreground": "#ffffff88",
 		"breadcrumb.focusForeground": "#ffffff",
 		"breadcrumb.activeSelectionForeground": "#ffdf00",
@@ -331,7 +333,7 @@
 			"fontStyle": "bold"
 		},
 		"interface": {
-			"foreground": "#ffffff",
+			"foreground": "#4cea7a",
 			"fontStyle": "italic"
 		},
 		"type": {
@@ -347,7 +349,7 @@
 			"fontStyle": "bold"
 		},
 		"function": {
-			"foreground": "#ffffff",
+			"foreground": "#3bdc75",
 			"fontStyle": "bold"
 		},
 		"variable": "#ffffff",
@@ -405,7 +407,7 @@
 				"meta.function-call"
 			],
 			"settings": {
-				"foreground": "#ffffff",
+				"foreground": "#3bdc75",
 				"fontStyle": "bold"
 			}
 		},
