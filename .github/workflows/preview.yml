@@ -2,14 +2,14 @@ name: Theme Preview
 
 on:
   push:
-    branches: [ "master", "main" ]
+    branches: [ "master", "main", "antigravity-audit" ]
   pull_request:
-    branches: [ "master", "main" ]
+    branches: [ "master", "main", "antigravity-audit" ]
   workflow_dispatch:
 
 jobs:
   preview:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
     - uses: actions/checkout@v4
