@@ -4,9 +4,12 @@ import sys
 import os
 
 def validate_hex(color, key):
+    if not isinstance(color, str):
+        print(f"ERROR: Color value for key '{key}' must be a string, but got {type(color).__name__}.", file=sys.stderr)
+        return False
     # Regex for #RGB, #RGBA, #RRGGBB, or #RRGGBBAA
     if not re.match(r'^#([A-Fa-f0-9]{3}|[A-Fa-f0-9]{4}|[A-Fa-f0-9]{6}|[A-Fa-f0-9]{8})$', color):
-        print(f"ERROR: Invalid color format '{color}' for key '{key}'. Expected #RGB, #RGBA, #RRGGBB, or #RRGGBBAA.")
+        print(f"ERROR: Invalid color format '{color}' for key '{key}'. Expected #RGB, #RGBA, #RRGGBB, or #RRGGBBAA.", file=sys.stderr)
         return False
     return True
 
