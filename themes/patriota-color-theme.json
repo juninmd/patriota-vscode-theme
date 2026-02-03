@@ -37,6 +37,8 @@
 		"editor.findMatchHighlightBackground": "#ffdf0033",
 		"editor.linkedEditingBackground": "#ffdf0033",
 		"editor.symbolHighlightBackground": "#ffdf0033",
+		"editor.stackFrameHighlightBackground": "#ffdf0033",
+		"editor.focusedStackFrameHighlightBackground": "#009c3b44",
 
 		"editorBracketMatch.background": "#002776",
 		"editorBracketMatch.border": "#ffdf00",
@@ -86,6 +88,8 @@
 		"menu.selectionForeground": "#ffffff",
 		"menu.border": "#009c3b",
 		"menu.separatorBackground": "#ffffff44",
+		"menubar.selectionBackground": "#009c3b",
+		"menubar.selectionForeground": "#ffffff",
 
 		"list.activeSelectionBackground": "#009c3b",
 		"list.activeSelectionForeground": "#ffffff",
@@ -261,6 +265,8 @@
 		"minimap.background": "#002776",
 		"minimap.findMatchHighlight": "#ffdf00",
 		"minimap.selectionHighlight": "#ffdf0044",
+		"minimap.errorHighlight": "#ff5555",
+		"minimap.warningHighlight": "#ffdf00",
 		"minimapGutter.addedBackground": "#009c3b",
 		"minimapGutter.modifiedBackground": "#ffdf00",
 		"minimapGutter.deletedBackground": "#ff5555",
@@ -308,6 +314,14 @@
 		"debugIcon.stepIntoForeground": "#ffdf00",
 		"debugIcon.stepOutForeground": "#ffdf00",
 		"debugIcon.continueForeground": "#009c3b",
+
+		"testing.iconPassed": "#009c3b",
+		"testing.iconFailed": "#ff5555",
+		"testing.iconQueued": "#ffdf00",
+		"testing.iconSkipped": "#ffffff88",
+		"testing.runAction": "#009c3b",
+		"testing.peekBorder": "#ffdf00",
+		"testing.peekHeaderBackground": "#002776",
 
 		"debugConsole.infoForeground": "#009c3b",
 		"debugConsole.warningForeground": "#ffdf00",
