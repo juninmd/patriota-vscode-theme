@@ -30,6 +30,8 @@
 		"editor.inactiveSelectionBackground": "#ffdf0022",
 		"editor.lineHighlightBackground": "#009c3b22",
 		"editor.lineHighlightBorder": "#ffffff00",
+		"editorStickyScroll.background": "#002060",
+		"editorStickyScrollHover.background": "#009c3b44",
 
 		"editor.wordHighlightBackground": "#009c3b44",
 		"editor.wordHighlightStrongBackground": "#009c3b66",
@@ -134,8 +136,8 @@
 		"terminalCursor.foreground": "#000000",
 		"terminal.ansiBlack": "#001133",
 		"terminal.ansiBrightBlack": "#808080",
-		"terminal.ansiBlue": "#4da6ff",
-		"terminal.ansiBrightBlue": "#4da6ff",
+		"terminal.ansiBlue": "#66b3ff",
+		"terminal.ansiBrightBlue": "#80c4ff",
 		"terminal.ansiCyan": "#4cea7a",
 		"terminal.ansiBrightCyan": "#4cea7a",
 		"terminal.ansiGreen": "#009c3b",
@@ -534,7 +536,7 @@
 				"markup.deleted.git_gutter"
 			],
 			"settings": {
-				"foreground": "#009c3b",
+				"foreground": "#3bdc75",
 				"fontStyle": "bold"
 			}
 		},
@@ -601,7 +603,7 @@
 			"name": "Markdown - Blockquote",
 			"scope": "markup.quote",
 			"settings": {
-				"foreground": "#009c3b",
+				"foreground": "#3bdc75",
 				"fontStyle": "italic"
 			}
 		},
@@ -612,7 +614,7 @@
 				"invalid.illegal"
 			],
 			"settings": {
-				"foreground": "#ff5555"
+				"foreground": "#ff6666"
 			}
 		},
 		{
