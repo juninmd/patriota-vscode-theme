@@ -60,7 +60,7 @@
 		"editorError.foreground": "#ff5555",
 		"editorWarning.foreground": "#ffdf00",
 		"editorInfo.foreground": "#ffffff",
-		"editorHint.foreground": "#009c3b",
+		"editorHint.foreground": "#3bdc75",
 
 		"editorGutter.background": "#002776",
 		"editorGutter.modifiedBackground": "#ffdf00",
@@ -140,7 +140,7 @@
 		"terminal.ansiBrightBlue": "#80c4ff",
 		"terminal.ansiCyan": "#4cea7a",
 		"terminal.ansiBrightCyan": "#4cea7a",
-		"terminal.ansiGreen": "#009c3b",
+		"terminal.ansiGreen": "#3bdc75",
 		"terminal.ansiBrightGreen": "#00ff60",
 		"terminal.ansiMagenta": "#ffdf00",
 		"terminal.ansiBrightMagenta": "#ffdf00",
@@ -192,7 +192,7 @@
 		"notificationLink.foreground": "#ffdf00",
 
 		"editorLightBulb.foreground": "#ffdf00",
-		"editorLightBulbAutoFix.foreground": "#009c3b",
+		"editorLightBulbAutoFix.foreground": "#3bdc75",
 		"sash.hoverBorder": "#ffdf00",
 
 		"editorWidget.background": "#002776",
@@ -217,7 +217,7 @@
 		"scrollbarSlider.hoverBackground": "#ffdf0066",
 		"scrollbarSlider.activeBackground": "#ffdf00aa",
 
-		"gitDecoration.addedResourceForeground": "#009c3b",
+		"gitDecoration.addedResourceForeground": "#3bdc75",
 		"gitDecoration.modifiedResourceForeground": "#ffdf00",
 		"gitDecoration.deletedResourceForeground": "#ff5555",
 		"gitDecoration.untrackedResourceForeground": "#4cea7a",
@@ -308,16 +308,16 @@
 		"merge.incomingContentBackground": "#ffdf0022",
 
 		"debugIcon.breakpointForeground": "#ff5555",
-		"debugIcon.startForeground": "#009c3b",
+		"debugIcon.startForeground": "#3bdc75",
 		"debugIcon.pauseForeground": "#ffdf00",
 		"debugIcon.stopForeground": "#ff5555",
 		"debugIcon.restartForeground": "#4cea7a",
 		"debugIcon.stepOverForeground": "#ffdf00",
 		"debugIcon.stepIntoForeground": "#ffdf00",
 		"debugIcon.stepOutForeground": "#ffdf00",
-		"debugIcon.continueForeground": "#009c3b",
+		"debugIcon.continueForeground": "#3bdc75",
 
-		"testing.iconPassed": "#009c3b",
+		"testing.iconPassed": "#3bdc75",
 		"testing.iconFailed": "#ff5555",
 		"testing.iconQueued": "#ffdf00",
 		"testing.iconSkipped": "#ffffff88",
@@ -325,14 +325,14 @@
 		"testing.peekBorder": "#ffdf00",
 		"testing.peekHeaderBackground": "#002776",
 
-		"debugConsole.infoForeground": "#009c3b",
+		"debugConsole.infoForeground": "#3bdc75",
 		"debugConsole.warningForeground": "#ffdf00",
 		"debugConsole.errorForeground": "#ff5555",
 		"debugConsole.sourceForeground": "#ffffff",
 		"debugConsoleInputIcon.foreground": "#ffdf00",
 
 		"symbolIcon.classForeground": "#ffdf00",
-		"symbolIcon.functionForeground": "#009c3b",
+		"symbolIcon.functionForeground": "#3bdc75",
 		"symbolIcon.variableForeground": "#ffffff",
 		"symbolIcon.constantForeground": "#ffdf00",
 		"symbolIcon.interfaceForeground": "#4cea7a",
@@ -649,6 +649,13 @@
 			"scope": "meta.preprocessor",
 			"settings": {
 				"foreground": "#ffdf00"
+			}
+		},
+		{
+			"name": "Markup - Inline Code",
+			"scope": "markup.inline.raw",
+			"settings": {
+				"foreground": "#3bdc75"
 			}
 		}
 	]
