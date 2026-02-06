@@ -223,6 +223,9 @@
 		"gitDecoration.untrackedResourceForeground": "#4cea7a",
 		"gitDecoration.ignoredResourceForeground": "#ffffff44",
 		"gitDecoration.conflictingResourceForeground": "#ff5555",
+		"gitDecoration.renamedResourceForeground": "#ffdf00",
+		"gitDecoration.stageModifiedResourceForeground": "#ffdf00",
+		"gitDecoration.stageDeletedResourceForeground": "#ff5555",
 
 		"diffEditor.insertedTextBackground": "#009c3b33",
 		"diffEditor.removedTextBackground": "#ff555533",
@@ -251,7 +254,11 @@
 
 		"commandCenter.foreground": "#ffffff",
 		"commandCenter.activeBackground": "#ffffff22",
+		"commandCenter.activeBorder": "#ffdf00",
 		"commandCenter.border": "#009c3b",
+		"commandCenter.background": "#002060",
+		"commandCenter.inactiveBorder": "#ffffff22",
+		"commandCenter.inactiveForeground": "#ffffff88",
 
 		"keybindingLabel.background": "#009c3b44",
 		"keybindingLabel.foreground": "#ffdf00",
@@ -279,12 +286,14 @@
 		"notebook.cellBorderColor": "#009c3b",
 		"notebook.focusedCellBorder": "#ffdf00",
 
+		"charts.lines": "#ffffff88",
+		"charts.foreground": "#ffffff",
 		"charts.red": "#ff5555",
-		"charts.blue": "#002776",
+		"charts.blue": "#4da6ff",
 		"charts.yellow": "#ffdf00",
-		"charts.green": "#009c3b",
+		"charts.green": "#3bdc75",
 		"charts.orange": "#e6b800",
-		"charts.purple": "#4da6ff",
+		"charts.purple": "#b366ff",
 
 		"quickInput.background": "#002776",
 		"quickInput.foreground": "#ffffff",
@@ -331,11 +340,39 @@
 		"debugConsole.sourceForeground": "#ffffff",
 		"debugConsoleInputIcon.foreground": "#ffdf00",
 
+		"symbolIcon.arrayForeground": "#ffdf00",
+		"symbolIcon.booleanForeground": "#ffdf00",
 		"symbolIcon.classForeground": "#ffdf00",
-		"symbolIcon.functionForeground": "#3bdc75",
-		"symbolIcon.variableForeground": "#ffffff",
+		"symbolIcon.colorForeground": "#ffdf00",
 		"symbolIcon.constantForeground": "#ffdf00",
+		"symbolIcon.constructorForeground": "#3bdc75",
+		"symbolIcon.enumeratorForeground": "#ffdf00",
+		"symbolIcon.enumeratorMemberForeground": "#3bdc75",
+		"symbolIcon.eventForeground": "#ffdf00",
+		"symbolIcon.fieldForeground": "#ffffff",
+		"symbolIcon.fileForeground": "#ffffff",
+		"symbolIcon.folderForeground": "#ffdf00",
+		"symbolIcon.functionForeground": "#3bdc75",
 		"symbolIcon.interfaceForeground": "#4cea7a",
+		"symbolIcon.keyForeground": "#ffffff",
+		"symbolIcon.keywordForeground": "#ffdf00",
+		"symbolIcon.methodForeground": "#3bdc75",
+		"symbolIcon.moduleForeground": "#ffffff",
+		"symbolIcon.namespaceForeground": "#ffffff",
+		"symbolIcon.nullForeground": "#ffdf00",
+		"symbolIcon.numberForeground": "#ffdf00",
+		"symbolIcon.objectForeground": "#ffffff",
+		"symbolIcon.operatorForeground": "#ffdf00",
+		"symbolIcon.packageForeground": "#ffffff",
+		"symbolIcon.propertyForeground": "#ffffff",
+		"symbolIcon.referenceForeground": "#ffdf00",
+		"symbolIcon.snippetForeground": "#ffdf00",
+		"symbolIcon.stringForeground": "#4cea7a",
+		"symbolIcon.structForeground": "#ffffff",
+		"symbolIcon.textForeground": "#ffffff",
+		"symbolIcon.typeParameterForeground": "#ffdf00",
+		"symbolIcon.unitForeground": "#ffdf00",
+		"symbolIcon.variableForeground": "#ffffff",
 
 		"settings.headerForeground": "#ffdf00",
 		"settings.modifiedItemIndicator": "#009c3b",
@@ -656,6 +693,21 @@
 			"scope": "markup.inline.raw",
 			"settings": {
 				"foreground": "#3bdc75"
+			}
+		},
+		{
+			"name": "Python Self",
+			"scope": "variable.language.special.self",
+			"settings": {
+				"foreground": "#ffdf00",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "String Quotes",
+			"scope": "punctuation.definition.string",
+			"settings": {
+				"foreground": "#4cea7a"
 			}
 		}
 	]
