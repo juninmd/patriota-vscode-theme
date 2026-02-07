@@ -44,9 +44,9 @@
 
 		"editorBracketMatch.background": "#002776",
 		"editorBracketMatch.border": "#ffdf00",
-		"editorBracketHighlight.foreground1": "#ffdf00",
-		"editorBracketHighlight.foreground2": "#ffffff",
-		"editorBracketHighlight.foreground3": "#009c3b",
+		"editorBracketHighlight.foreground1": "#3bdc75",
+		"editorBracketHighlight.foreground2": "#ffdf00",
+		"editorBracketHighlight.foreground3": "#ffffff",
 
 		"editorIndentGuide.background": "#ffffff33",
 		"editorIndentGuide.activeBackground": "#ffdf00",
@@ -134,6 +134,7 @@
 		"terminal.selectionBackground": "#ffdf0044",
 		"terminalCursor.background": "#ffdf00",
 		"terminalCursor.foreground": "#000000",
+		"terminalCommandDecoration.successBackground": "#009c3b",
 		"terminal.ansiBlack": "#001133",
 		"terminal.ansiBrightBlack": "#808080",
 		"terminal.ansiBlue": "#66b3ff",
@@ -211,6 +212,7 @@
 		"breadcrumb.foreground": "#ffffff88",
 		"breadcrumb.focusForeground": "#ffffff",
 		"breadcrumb.activeSelectionForeground": "#ffdf00",
+		"breadcrumb.hoverForeground": "#ffdf00",
 		"breadcrumbPicker.background": "#002776",
 
 		"scrollbarSlider.background": "#ffdf0033",
@@ -253,7 +255,7 @@
 		"checkbox.selectBorder": "#ffdf00",
 
 		"commandCenter.foreground": "#ffffff",
-		"commandCenter.activeBackground": "#ffffff22",
+		"commandCenter.activeBackground": "#009c3b33",
 		"commandCenter.activeBorder": "#ffdf00",
 		"commandCenter.border": "#009c3b",
 		"commandCenter.background": "#002060",
@@ -285,6 +287,7 @@
 
 		"notebook.cellBorderColor": "#009c3b",
 		"notebook.focusedCellBorder": "#ffdf00",
+		"notebook.cellEditorBackground": "#002060",
 
 		"charts.lines": "#ffffff88",
 		"charts.foreground": "#ffffff",
