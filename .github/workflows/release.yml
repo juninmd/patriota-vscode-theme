@@ -25,7 +25,10 @@ jobs:
           node-version: "lts/*"
 
       - name: Install dependencies
-        run: npm install -g semantic-release @semantic-release/git @semantic-release/changelog -D
+        run: npm install -g semantic-release @semantic-release/git @semantic-release/changelog @semantic-release/exec -D
+
+      - name: Install vsce
+        run: npm install -g @vscode/vsce
 
       - name: Release
         env:
