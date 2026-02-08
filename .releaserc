@@ -6,6 +6,16 @@
     ["@semantic-release/npm", {
       "npmPublish": false
     }],
-    "@semantic-release/github"
+    ["@semantic-release/exec", {
+      "prepareCmd": "npm run package"
+    }],
+    ["@semantic-release/github", {
+      "assets": [
+        {
+          "path": "*.vsix",
+          "label": "VS Code Extension (VSIX)"
+        }
+      ]
+    }]
   ]
 }
