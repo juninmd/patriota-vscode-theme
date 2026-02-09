@@ -186,8 +186,8 @@
 		"breadcrumb.hoverForeground": "#ffdf00",
 		"breadcrumbPicker.background": "#002776",
 		"scrollbarSlider.background": "#ffdf0033",
-		"scrollbarSlider.hoverBackground": "#ffdf0066",
-		"scrollbarSlider.activeBackground": "#ffdf00cc",
+		"scrollbarSlider.hoverBackground": "#3bdc7566",
+		"scrollbarSlider.activeBackground": "#3bdc75cc",
 		"gitDecoration.addedResourceForeground": "#3bdc75",
 		"gitDecoration.modifiedResourceForeground": "#ffdf00",
 		"gitDecoration.deletedResourceForeground": "#ff5555",
@@ -333,16 +333,20 @@
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"class": {
-			"foreground": "#ffffff",
+			"foreground": "#80c4ff",
 			"fontStyle": "bold"
 		},
 		"interface": {
-			"foreground": "#4cea7a",
+			"foreground": "#80c4ff",
 			"fontStyle": "italic"
 		},
 		"type": {
-			"foreground": "#ffffff",
+			"foreground": "#80c4ff",
 			"fontStyle": "bold"
+		},
+		"decorator": {
+			"foreground": "#80c4ff",
+			"fontStyle": "italic"
 		},
 		"enum": {
 			"foreground": "#ffffff",
@@ -423,7 +427,7 @@
 				"entity.name.function.decorator"
 			],
 			"settings": {
-				"foreground": "#ffdf00",
+				"foreground": "#80c4ff",
 				"fontStyle": "italic"
 			}
 		},
@@ -512,7 +516,7 @@
 				"new.expr entity.name.type"
 			],
 			"settings": {
-				"foreground": "#ffffff",
+				"foreground": "#80c4ff",
 				"fontStyle": "bold underline"
 			}
 		},
