@@ -20,7 +20,7 @@
 		"editor.background": "#002776",
 		"editor.foreground": "#ffffff",
 		"editorLineNumber.foreground": "#ffffff66",
-		"editorLineNumber.activeForeground": "#ffdf00",
+		"editorLineNumber.activeForeground": "#3bdc75",
 		"editorCursor.foreground": "#ffdf00",
 		"editor.selectionBackground": "#ffdf0055",
 		"editor.selectionHighlightBackground": "#ffdf0033",
@@ -185,9 +185,9 @@
 		"breadcrumb.activeSelectionForeground": "#ffdf00",
 		"breadcrumb.hoverForeground": "#ffdf00",
 		"breadcrumbPicker.background": "#002776",
-		"scrollbarSlider.background": "#ffdf0033",
-		"scrollbarSlider.hoverBackground": "#3bdc7566",
-		"scrollbarSlider.activeBackground": "#3bdc75cc",
+		"scrollbarSlider.background": "#3bdc7544",
+		"scrollbarSlider.hoverBackground": "#ffdf0066",
+		"scrollbarSlider.activeBackground": "#ffffff88",
 		"gitDecoration.addedResourceForeground": "#3bdc75",
 		"gitDecoration.modifiedResourceForeground": "#ffdf00",
 		"gitDecoration.deletedResourceForeground": "#ff5555",
@@ -206,7 +206,7 @@
 		"peekViewTitle.background": "#002776",
 		"peekViewTitleLabel.foreground": "#ffdf00",
 		"welcomePage.buttonBackground": "#009c3b",
-		"welcomePage.buttonHoverBackground": "#007a2e",
+		"welcomePage.buttonHoverBackground": "#3bdc75",
 		"welcomePage.progress.background": "#009c3b",
 		"welcomePage.tileBackground": "#002060",
 		"welcomePage.background": "#002776",
@@ -372,15 +372,15 @@
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"class": {
-			"foreground": "#80c4ff",
+			"foreground": "#ffffff",
 			"fontStyle": "bold"
 		},
 		"interface": {
-			"foreground": "#80c4ff",
+			"foreground": "#ffffff",
 			"fontStyle": "italic"
 		},
 		"type": {
-			"foreground": "#80c4ff",
+			"foreground": "#ffffff",
 			"fontStyle": "bold"
 		},
 		"decorator": {
@@ -541,7 +541,7 @@
 			"name": "Booleans",
 			"scope": "constant.language.boolean",
 			"settings": {
-				"foreground": "#ffdf00",
+				"foreground": "#ffffff",
 				"fontStyle": "bold"
 			}
 		},
@@ -555,7 +555,7 @@
 				"new.expr entity.name.type"
 			],
 			"settings": {
-				"foreground": "#80c4ff",
+				"foreground": "#ffffff",
 				"fontStyle": "bold underline"
 			}
 		},
