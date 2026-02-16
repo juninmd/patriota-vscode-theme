@@ -1,0 +1,37 @@
+name: Theme Preview
+
+on:
+  push:
+    branches: [ "master", "main", "antigravity-audit" ]
+  pull_request:
+    branches: [ "master", "main", "antigravity-audit" ]
+  workflow_dispatch:
+
+jobs:
+  preview:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install uv
+      run: curl -LsSf https://astral.sh/uv/install.sh | sh
+
+    - name: Install dependencies
+      run: |
+        uv pip install --system playwright
+        python -m playwright install --with-deps chromium
+
+    - name: Generate Preview
+      run: python generate_preview.py
+
+    - name: Upload Preview Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: theme-preview
+        path: theme_preview.png

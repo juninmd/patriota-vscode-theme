@@ -1,0 +1,45 @@
+{
+  "name": "patriota",
+  "displayName": "patriota",
+  "description": "Mostre o seu lado brasileiro com as cores oficiais da nossa bandeira! O melhor tema para devs do Brasil.",
+  "version": "0.0.4",
+  "publisher": "juninmd",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juninmd/patriota-vscode-theme"
+  },
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "brasil",
+    "brazil",
+    "patriota"
+  ],
+  "galleryBanner": {
+    "color": "#002776",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "patriota",
+        "uiTheme": "vs-dark",
+        "path": "./themes/patriota-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package",
+    "vscode:prepublish": "echo 'Preparing to publish'"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.22.0"
+  }
+}
