@@ -37,7 +37,8 @@
   },
   "scripts": {
     "package": "vsce package",
-    "vscode:prepublish": "echo 'Preparing to publish'"
+    "vscode:prepublish": "echo 'Preparing to publish'",
+    "build": "mkdir -p _site && cp index.html _site/"
   },
   "devDependencies": {
     "@vscode/vsce": "^2.22.0"

@@ -3,3 +3,4 @@ node_modules
 preview.html
 theme_preview.png
 __pycache__/
+_site/
