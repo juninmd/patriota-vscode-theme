@@ -97,7 +97,7 @@
 		"tree.indentGuidesStroke": "#009c3b44",
 		"tab.activeBackground": "#0b1c3d",
 		"tab.activeForeground": "#ffdf00",
-		"tab.activeBorderTop": "#00000000",
+		"tab.activeBorderTop": "#ffdf00",
 		"tab.inactiveBackground": "#102a5e",
 		"tab.inactiveForeground": "#ffffffaa",
 		"tab.border": "#00000000",
@@ -137,7 +137,7 @@
 		"terminal.ansiBrightYellow": "#ffff00",
 		"badge.background": "#ffdf00",
 		"badge.foreground": "#0b1c3d",
-		"progressBar.background": "#ffdf00",
+		"progressBar.background": "#009c3b",
 		"focusBorder": "#ffdf00",
 		"pickerGroup.border": "#00000000",
 		"pickerGroup.foreground": "#ffdf00",
@@ -410,7 +410,7 @@
 				"keyword.control"
 			],
 			"settings": {
-				"foreground": "#ffdf00",
+				"foreground": "#3bdc75",
 				"fontStyle": "bold italic"
 			}
 		},
@@ -557,7 +557,7 @@
 				"punctuation.definition.tag"
 			],
 			"settings": {
-				"foreground": "#ffffffcc"
+				"foreground": "#ffdf00aa"
 			}
 		},
 		{
