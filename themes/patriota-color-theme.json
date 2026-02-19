@@ -557,7 +557,7 @@
 				"punctuation.definition.tag"
 			],
 			"settings": {
-				"foreground": "#ffdf00aa"
+    			"foreground": "#ffdf00cc"
 			}
 		},
 		{
