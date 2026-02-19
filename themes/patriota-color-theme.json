@@ -12,7 +12,7 @@
 		"activityBarBadge.foreground": "#0b1c3d",
 		"sideBar.background": "#002776",
 		"sideBar.foreground": "#ffffff",
-		"sideBar.border": "#00000000",
+		"sideBar.border": "#009c3b44",
 		"sideBarTitle.foreground": "#ffdf00",
 		"sideBarSectionHeader.background": "#009c3b",
 		"sideBarSectionHeader.foreground": "#0b1c3d",
@@ -81,7 +81,7 @@
 		"menubar.selectionBackground": "#009c3b",
 		"menubar.selectionForeground": "#ffffff",
 		"list.activeSelectionBackground": "#009c3b",
-		"list.activeSelectionForeground": "#ffffff",
+		"list.activeSelectionForeground": "#ffdf00",
 		"list.inactiveSelectionBackground": "#009c3b88",
 		"list.inactiveSelectionForeground": "#ffffff",
 		"list.focusBackground": "#009c3b",
@@ -455,7 +455,7 @@
 				"variable.parameter"
 			],
 			"settings": {
-				"foreground": "#ffdf00",
+				"foreground": "#3bdc75",
 				"fontStyle": "italic"
 			}
 		},
@@ -509,7 +509,7 @@
 			"name": "Booleans",
 			"scope": "constant.language.boolean",
 			"settings": {
-				"foreground": "#ffffff",
+				"foreground": "#ffdf00",
 				"fontStyle": "bold"
 			}
 		},
