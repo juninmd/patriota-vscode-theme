@@ -3,4 +3,5 @@
   command = "npm run build"
 
 [build.environment]
-  NPM_FLAGS = "--omit=dev"
+  NPM_FLAGS = "--omit=dev --no-optional"
+  NODE_ENV = "production"
