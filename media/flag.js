@@ -4,10 +4,11 @@ window.flagSvg = function () {
     .map(([x, y]) => `<circle cx="${x}" cy="${y}" r="3.2" fill="#fff"/>`)
     .join('');
   return `
-<svg viewBox="0 0 720 640" xmlns="http://www.w3.org/2000/svg" aria-label="Bandeirinha do Brasil">
-  <g class="leg l1"><rect x="230" y="520" width="30" height="80" rx="14" fill="#002776"/><ellipse cx="248" cy="604" rx="40" ry="16" fill="#ffdf00"/></g>
-  <g class="leg l2"><rect x="460" y="520" width="30" height="80" rx="14" fill="#002776"/><ellipse cx="478" cy="604" rx="40" ry="16" fill="#ffdf00"/></g>
-  <rect class="pole" x="-6" y="0" width="22" height="560" rx="10" fill="#c9a227"/>
+<svg viewBox="0 0 720 710" xmlns="http://www.w3.org/2000/svg" aria-label="Bandeirinha do Brasil">
+  <ellipse cx="360" cy="690" rx="230" ry="16" fill="#00000055"/>
+  <g class="leg l1"><rect x="215" y="490" width="44" height="170" rx="20" fill="#ffdf00"/><ellipse cx="237" cy="672" rx="62" ry="24" fill="#fff" stroke="#009c3b" stroke-width="8"/></g>
+  <g class="leg l2"><rect x="461" y="490" width="44" height="170" rx="20" fill="#ffdf00"/><ellipse cx="483" cy="672" rx="62" ry="24" fill="#fff" stroke="#009c3b" stroke-width="8"/></g>
+  <rect class="pole" x="-6" y="0" width="22" height="600" rx="10" fill="#ffdf00" stroke="#0b1c3d" stroke-width="3"/>
   <g class="cloth">
     <clipPath id="c"><rect x="0" y="0" width="720" height="504"/></clipPath>
     <g clip-path="url(#c)">

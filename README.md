@@ -1,6 +1,16 @@
 # 🇧🇷 Patriota — Tema VS Code
 
+![Patriota escuro](images/dark.png)
+
 Tema escuro com as cores oficiais da bandeira do Brasil: **azul `#002776`**, **verde `#009c3b`**, **amarelo `#ffdf00`** e **branco**. Feito para devs brasileiros.
+
+## 🎨 Duas variantes
+
+| Patriota (escuro) | Patriota Claro |
+|---|---|
+| ![escuro](images/dark.png) | ![claro](images/light.png) |
+
+Escolha com `Ctrl+K Ctrl+T` → **Patriota** ou **Patriota Claro**.
 
 ## ✨ Recursos
 
@@ -19,9 +29,13 @@ Tema escuro com as cores oficiais da bandeira do Brasil: **azul `#002776`**, **v
 ## 🛠️ Desenvolvimento
 
 ```bash
-python3 scripts/validate_theme.py   # valida cores e contraste
+python3 scripts/validate_theme.py   # valida cores e contraste (todos os temas)
+python3 scripts/build_light.py      # regenera o tema claro
+npm run screenshots                 # prints num VS Code real (requer code-server)
 python3 -m pytest tests             # testes
 npx @vscode/vsce package            # gera o .vsix
 ```
 
 Regras do projeto (veja `AGENTS.md`): máximo de 150 linhas por arquivo de código, validação e testes antes de commitar.
+
+📦 Publicação: veja [PUBLISHING.md](PUBLISHING.md).

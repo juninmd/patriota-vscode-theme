@@ -2,7 +2,7 @@ import json
 import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CODE_FILES = ["src/extension.js", "media/flag.js", "media/pet.js", "media/pet.css"]
+CODE_FILES = ["scripts/take_screenshots.js", "scripts/build_light.py", "scripts/make_icon.js", "src/extension.js", "media/flag.js", "media/pet.js", "media/pet.css"]
 
 
 def load_manifest():
@@ -18,6 +18,14 @@ def test_declared_files_exist():
     for views in pkg["contributes"]["views"].values():
         for view in views:
             assert os.path.exists(os.path.join(ROOT, view["icon"]))
+
+
+def test_store_metadata():
+    pkg = load_manifest()
+    assert os.path.exists(os.path.join(ROOT, pkg["icon"]))
+    assert pkg["publisher"] and pkg["repository"]["url"] and pkg["bugs"]["url"]
+    labels = [t["label"] for t in pkg["contributes"]["themes"]]
+    assert labels == ["Patriota", "Patriota Claro"]
 
 
 def test_commands_have_titles():

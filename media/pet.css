@@ -4,11 +4,11 @@ body { position: relative; font-family: var(--vscode-font-family, sans-serif); }
   position: absolute; left: 0; right: 0; bottom: 0; height: 10px;
   background: linear-gradient(90deg, #009c3b 0 33%, #ffdf00 33% 66%, #002776 66%);
 }
-#stage { position: absolute; bottom: 8px; left: 0; width: 100px; cursor: pointer; will-change: transform; }
+#stage { position: absolute; bottom: 12px; left: 0; width: 100px; cursor: pointer; will-change: transform; }
 #stage svg { width: 100%; height: auto; overflow: visible; display: block; }
 .cloth { transform-origin: 0 0; animation: wave 1.1s ease-in-out infinite alternate; }
 @keyframes wave { from { transform: skewY(-2deg) scaleX(1); } to { transform: skewY(2deg) scaleX(.96); } }
-.leg { transform-origin: 50% 0; animation: step .5s ease-in-out infinite alternate; }
+.leg { transform-box: fill-box; transform-origin: 50% 0; animation: step .5s ease-in-out infinite alternate; }
 .l2 { animation-delay: .25s; }
 @keyframes step { from { transform: rotate(-14deg); } to { transform: rotate(14deg); } }
 #stage.idle .leg, #stage.idle .cloth { animation-play-state: paused; }

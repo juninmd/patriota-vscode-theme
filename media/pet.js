@@ -2,7 +2,7 @@
   const vscode = acquireVsCodeApi();
   const stage = document.getElementById('stage');
   const sky = document.getElementById('sky');
-  const sizes = { small: 70, medium: 100, large: 150 };
+  const sizes = { small: 80, medium: 120, large: 170 };
   const speeds = { slow: 0.5, normal: 1, fast: 1.8 };
   const phrases = [
     'Ordem e Progresso!', 'Bora codar! 🇧🇷', 'Deploy na sexta? Coragem!',
