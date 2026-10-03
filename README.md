@@ -1,28 +1,27 @@
-# 🚀 Patriota Vscode Theme
+# 🇧🇷 Patriota — Tema VS Code
 
-[![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
-[![Protocol: Antigravity](https://img.shields.io/badge/Protocol-Antigravity-orange.svg)]()
+Tema escuro com as cores oficiais da bandeira do Brasil: **azul `#002776`**, **verde `#009c3b`**, **amarelo `#ffdf00`** e **branco**. Feito para devs brasileiros.
 
-> A modern, high-performance project built with **Node.js / TypeScript**. Orchestrated under the Antigravity protocol.
+## ✨ Recursos
 
-## ✨ Features
+- **Tema completo**: editor, sidebar, abas, terminal, debug, testes, SCM graph e ícones de símbolos.
+- **Chat / Copilot**: cores para Chat, Inline Chat e _ghost text_ (sugestões do Copilot).
+- **Brackets coloridos**: 6 níveis (verde, amarelo, branco, azul...) com guias de pares.
+- **Realce semântico** para classes, funções, métodos, namespaces e mais.
+- **🇧🇷 Bandeirinha, o pet**: uma bandeira do Brasil com perninhas que anda pelo painel inferior.
+  - Clique nela para comemorar (confete + pulo).
+  - Comemora sozinha quando uma task termina com sucesso.
+  - Comandos: `Patriota: Chamar o pet Bandeirinha` e `Patriota: Comemorar! 🎉`.
+  - Configurações: `patriota.pet.size` (small/medium/large) e `patriota.pet.speed` (slow/normal/fast).
 
-- **High Performance**: Optimized for speed and low resource usage.
-- **Clean Architecture**: Built following strict Antigravity guidelines.
-- **Automated**: Integrated with modern CI/CD and verification scripts.
+> **Sobre o pet do Copilot:** o GitHub Copilot não expõe API para trocar nenhum mascote/pet, e extensões não conseguem alterar outras extensões. Por isso o Patriota traz o seu próprio pet.
 
-## 🛠️ Tech Stack
+## 🛠️ Desenvolvimento
 
-- **Primary Technology**: Node.js / TypeScript
-- **Architecture**: Modular and domain-driven.
+```bash
+python3 scripts/validate_theme.py   # valida cores e contraste
+python3 -m pytest tests             # testes
+npx @vscode/vsce package            # gera o .vsix
+```
 
-## 🛡️ Antigravity Protocol
-
-This project follows the **Antigravity** code standards:
-- **150-Line Limit**: Applied to all logic modules.
-- **Strict Typing**: Avoiding dynamic/any types.
-- **Clean Code**: DRY, KISS, and SOLID principles applied rigorously.
-
----
-
-*"Simplicity is the ultimate sophistication."*
+Regras do projeto (veja `AGENTS.md`): máximo de 150 linhas por arquivo de código, validação e testes antes de commitar.

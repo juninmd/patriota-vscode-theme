@@ -6,4 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+- Pet Bandeirinha (bandeira do Brasil animada) no painel inferior
+- Cores para Chat/Copilot, brackets (6 níveis), SCM graph, símbolos, debug e testes
+- Novos tokens semânticos (method, namespace, typeParameter...)
+
+## 0.0.4
+
 - Initial release
