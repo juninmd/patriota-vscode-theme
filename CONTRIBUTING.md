@@ -35,12 +35,12 @@ Thank you for your interest in contributing to the **Patriota** theme! We welcom
 
 ## Commits
 
-Use [Conventional Commits](https://www.conventionalcommits.org/pt-br/) (`feat:`, `fix:`, `docs:`...). Cada push na `main` gera uma release automática (veja [PUBLISHING.md](PUBLISHING.md)).
+Use [Conventional Commits](https://www.conventionalcommits.org/pt-br/) (`feat:`, `fix:`, `docs:`...). Cada push na `master` gera uma release automática (veja [PUBLISHING.md](PUBLISHING.md)).
 
 ## Submitting a Pull Request
 
 1.  Push your changes to your fork.
-2.  Open a Pull Request against the `main` branch.
+2.  Open a Pull Request against the `master` branch.
 3.  Ensure the CI checks pass.
 4.  Provide a clear description of your changes and why they are needed.
 

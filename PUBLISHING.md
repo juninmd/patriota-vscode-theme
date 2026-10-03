@@ -1,6 +1,6 @@
 # 🚀 Publicação automática (semantic-release)
 
-Cada push na `main` roda `.github/workflows/release.yml`: valida, testa e executa o
+Cada push na `master` roda `.github/workflows/release.yml`: valida, testa e executa o
 **semantic-release**, que lê os commits ([Conventional Commits](https://www.conventionalcommits.org/pt-br/)),
 decide a versão, atualiza `package.json` e `CHANGELOG.md`, cria a tag e a GitHub Release com o `.vsix`
 e publica nas lojas.
@@ -22,7 +22,7 @@ e publica nas lojas.
 3. No GitHub (_Settings → Secrets and variables → Actions_) crie:
    - `VSCE_PAT` — token da VS Code Marketplace;
    - `OVSX_PAT` _(opcional)_ — token do [Open VSX](https://open-vsx.org) (VSCodium, Cursor...).
-4. Se a `main` tiver branch protection, permita que `github-actions[bot]` faça push (o commit `chore(release)`).
+4. Se a `master` tiver branch protection, permita que `github-actions[bot]` faça push (o commit `chore(release)`).
 
 Sem os tokens a release no GitHub sai normalmente e a publicação nas lojas é pulada.
 
