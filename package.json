@@ -1,8 +1,8 @@
 {
   "name": "patriota",
-  "displayName": "patriota",
-  "description": "Mostre o seu lado brasileiro com as cores oficiais da nossa bandeira! O melhor tema para devs do Brasil.",
-  "version": "0.0.4",
+  "displayName": "Patriota 🇧🇷 - Tema do Brasil + Pet Bandeirinha",
+  "description": "Tema com as cores oficiais da bandeira do Brasil + um pet bandeirinha que anda pelo seu VS Code. O melhor tema para devs do Brasil.",
+  "version": "0.1.0",
   "publisher": "juninmd",
   "license": "MIT",
   "repository": {
@@ -13,14 +13,24 @@
     "vscode": "^1.72.0"
   },
   "categories": [
-    "Themes"
+    "Themes",
+    "Other"
   ],
   "keywords": [
     "theme",
     "color-theme",
+    "dark",
+    "light",
     "brasil",
     "brazil",
-    "patriota"
+    "brasileiro",
+    "bandeira",
+    "patriota",
+    "pet",
+    "copilot",
+    "verde",
+    "amarelo",
+    "azul"
   ],
   "galleryBanner": {
     "color": "#002776",
@@ -29,18 +39,102 @@
   "contributes": {
     "themes": [
       {
-        "label": "patriota",
+        "label": "Patriota",
         "uiTheme": "vs-dark",
         "path": "./themes/patriota-color-theme.json"
+      },
+      {
+        "label": "Patriota Claro",
+        "uiTheme": "vs",
+        "path": "./themes/patriota-light-color-theme.json"
       }
-    ]
+    ],
+    "viewsContainers": {
+      "panel": [
+        {
+          "id": "patriota",
+          "title": "Patriota 🇧🇷",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "patriota": [
+        {
+          "type": "webview",
+          "id": "patriota.petView",
+          "name": "Bandeirinha",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "patriota.pet.show",
+        "title": "Patriota: Chamar o pet Bandeirinha"
+      },
+      {
+        "command": "patriota.pet.cheer",
+        "title": "Patriota: Comemorar! 🎉"
+      }
+    ],
+    "configuration": {
+      "title": "Patriota",
+      "properties": {
+        "patriota.pet.size": {
+          "type": "string",
+          "enum": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "default": "medium",
+          "description": "Tamanho do pet Bandeirinha."
+        },
+        "patriota.pet.speed": {
+          "type": "string",
+          "enum": [
+            "slow",
+            "normal",
+            "fast"
+          ],
+          "default": "normal",
+          "description": "Velocidade do pet Bandeirinha."
+        }
+      }
+    }
   },
   "scripts": {
+    "validate": "python3 scripts/validate_theme.py",
+    "test": "python3 -m pytest tests",
+    "screenshots": "node scripts/take_screenshots.js",
+    "build": "mkdir -p _site && cp index.html _site/",
     "package": "vsce package",
-    "vscode:prepublish": "echo 'Preparing to publish'",
-    "build": "mkdir -p _site && cp index.html _site/"
+    "publish:vsce": "vsce publish",
+    "publish:ovsx": "npx ovsx publish"
   },
   "devDependencies": {
-    "@vscode/vsce": "^2.22.0"
-  }
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@vscode/vsce": "^2.22.0",
+    "semantic-release": "^24.2.9"
+  },
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "icon": "media/icon.png",
+  "homepage": "https://github.com/juninmd/patriota-vscode-theme#readme",
+  "bugs": {
+    "url": "https://github.com/juninmd/patriota-vscode-theme/issues"
+  },
+  "qna": "https://github.com/juninmd/patriota-vscode-theme/discussions",
+  "badges": [
+    {
+      "url": "https://img.shields.io/badge/licen%C3%A7a-MIT-009c3b",
+      "href": "https://github.com/juninmd/patriota-vscode-theme/blob/main/LICENSE",
+      "description": "MIT"
+    }
+  ]
 }

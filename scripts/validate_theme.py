@@ -162,6 +162,8 @@ def validate_theme(filepath):
         return False
 
 if __name__ == "__main__":
-    theme_path = os.path.join('themes', 'patriota-color-theme.json')
-    if not validate_theme(theme_path):
+    import glob
+    paths = sorted(glob.glob(os.path.join('themes', '*-color-theme.json')))
+    results = [validate_theme(path) for path in paths]
+    if not paths or not all(results):
         sys.exit(1)

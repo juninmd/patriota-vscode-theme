@@ -6,4 +6,13 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+- Nova variante **Patriota Claro**
+- Ícone, metadados e prints para a Marketplace; workflow `publish.yml` e guia `PUBLISHING.md`
+- Pet com pernas e sombra; validação de todos os temas
+- Pet Bandeirinha (bandeira do Brasil animada) no painel inferior
+- Cores para Chat/Copilot, brackets (6 níveis), SCM graph, símbolos, debug e testes
+- Novos tokens semânticos (method, namespace, typeParameter...)
+
+## 0.0.4
+
 - Initial release
