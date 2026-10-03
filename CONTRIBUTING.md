@@ -33,6 +33,10 @@ Thank you for your interest in contributing to the **Patriota** theme! We welcom
     ```
     Open `preview.html` or check `theme_preview.png`.
 
+## Commits
+
+Use [Conventional Commits](https://www.conventionalcommits.org/pt-br/) (`feat:`, `fix:`, `docs:`...). Cada push na `main` gera uma release automática (veja [PUBLISHING.md](PUBLISHING.md)).
+
 ## Submitting a Pull Request
 
 1.  Push your changes to your fork.

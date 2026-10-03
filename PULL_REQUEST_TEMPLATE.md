@@ -7,6 +7,7 @@ Please include a summary of the changes and the related issue.
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 
 ## Checklist
+- [ ] O título do PR segue Conventional Commits (`feat:`, `fix:`...), pois define a versão da release
 - [ ] I have validated the theme using `scripts/validate_theme.py`
 - [ ] I have generated a preview and verified the visual changes
 - [ ] My changes follow the style guidelines of this project

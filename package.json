@@ -114,7 +114,11 @@
     "publish:ovsx": "npx ovsx publish"
   },
   "devDependencies": {
-    "@vscode/vsce": "^2.22.0"
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@vscode/vsce": "^2.22.0",
+    "semantic-release": "^24.2.9"
   },
   "main": "./src/extension.js",
   "activationEvents": [

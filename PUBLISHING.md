@@ -1,23 +1,34 @@
-# 🚀 Como publicar na VS Code Marketplace
+# 🚀 Publicação automática (semantic-release)
 
-## Uma vez só
-1. Crie o publisher **`juninmd`** em <https://marketplace.visualstudio.com/manage> (login Microsoft).
-2. Crie um **Personal Access Token** em <https://dev.azure.com> → _User settings → Personal access tokens_
-   com escopo **Marketplace → Manage** e organização **All accessible organizations**.
-3. No GitHub: _Settings → Secrets → Actions_ → crie `VSCE_PAT` com o token
-   (opcional: `OVSX_PAT` para o [Open VSX](https://open-vsx.org), usado por VSCodium/Cursor).
+Cada push na `main` roda `.github/workflows/release.yml`: valida, testa e executa o
+**semantic-release**, que lê os commits ([Conventional Commits](https://www.conventionalcommits.org/pt-br/)),
+decide a versão, atualiza `package.json` e `CHANGELOG.md`, cria a tag e a GitHub Release com o `.vsix`
+e publica nas lojas.
 
-## Publicar
-- **Automático:** crie uma tag/release `vX.Y.Z` no GitHub — o workflow `publish.yml` valida, empacota e publica.
-- **Manual:**
-  ```bash
-  npm ci
-  npm run validate && npm test
-  npx vsce package          # gera patriota-X.Y.Z.vsix (teste com "Install from VSIX...")
-  npx vsce publish -p $VSCE_PAT
-  ```
+| Commit | Efeito |
+|---|---|
+| `fix: ...` | patch (0.0.X) |
+| `feat: ...` | minor (0.X.0) |
+| `feat!: ...` ou `BREAKING CHANGE:` no corpo | major (X.0.0) |
+| `docs:`, `chore:`, `test:`... | sem release |
 
-## Checklist
-- [ ] Versão atualizada em `package.json` e `CHANGELOG.md`
-- [ ] `npm run validate` e `npm test` verdes
-- [ ] Screenshots atualizados (`npm run screenshots`)
+> Com squash merge, o **título do PR** vira o commit — use o formato acima.
+> A primeira release (sem tags anteriores) sai como `v1.0.0`.
+
+## Configuração (uma vez só)
+1. Crie o publisher **`juninmd`** em <https://marketplace.visualstudio.com/manage>.
+2. Crie um **Personal Access Token** em <https://dev.azure.com> (_User settings → Personal access tokens_),
+   escopo **Marketplace → Manage**, organização **All accessible organizations**.
+3. No GitHub (_Settings → Secrets and variables → Actions_) crie:
+   - `VSCE_PAT` — token da VS Code Marketplace;
+   - `OVSX_PAT` _(opcional)_ — token do [Open VSX](https://open-vsx.org) (VSCodium, Cursor...).
+4. Se a `main` tiver branch protection, permita que `github-actions[bot]` faça push (o commit `chore(release)`).
+
+Sem os tokens a release no GitHub sai normalmente e a publicação nas lojas é pulada.
+
+## Manual (emergência)
+```bash
+npm ci && npm run validate && npm test
+npx vsce package          # teste com "Install from VSIX..."
+npx vsce publish -p $VSCE_PAT
+```
