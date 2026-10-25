@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.7.3](https://github.com/juninmd/patriota-vscode-theme/compare/v1.7.2...v1.7.3) (2026-10-25)
+
+
+### Bug Fixes
+
+* **ci:** declara pytest em pyproject (requirements.txt era ignorado) ([dccee22](https://github.com/juninmd/patriota-vscode-theme/commit/dccee228e11a06475e3803ec40149ef545ae932c))
+
 ## [1.7.2](https://github.com/juninmd/patriota-vscode-theme/compare/v1.7.1...v1.7.2) (2026-10-25)
 
 
