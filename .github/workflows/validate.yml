@@ -12,6 +12,25 @@ concurrency:
 permissions:
   contents: read
 
+# Mesmo gate do reusable-validate (validate-pr), mas com o Python preparado
+# explicitamente: `npm test` roda o pytest dos scripts de validacao do tema e,
+# no runner limpo, o passo de instalacao Python do reusable nao roda
+# (hashFiles nao casou), entao o job morria com "No module named pytest".
 jobs:
   check:
-    uses: juninmd/base-actions/.github/workflows/reusable-validate.yml@main
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias Python de teste
+        run: python -m pip install --upgrade pip pytest
+
+      - uses: juninmd/base-actions/validate-pr@main
