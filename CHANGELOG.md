@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.7.4](https://github.com/juninmd/patriota-vscode-theme/compare/v1.7.3...v1.7.4) (2026-10-25)
+
+
+### Bug Fixes
+
+* **ci:** prepara Python/pytest no proprio validate.yml ([5266993](https://github.com/juninmd/patriota-vscode-theme/commit/52669932360eb1a44db639661a00463d9a3a2c6b))
+
 ## [1.7.3](https://github.com/juninmd/patriota-vscode-theme/compare/v1.7.2...v1.7.3) (2026-10-25)
 
 
