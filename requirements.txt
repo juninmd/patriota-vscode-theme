@@ -1,0 +1,3 @@
+# Dependencias de teste/CI. O gate (base-actions/validate-pr) instala este
+# arquivo antes de rodar `npm test`, que executa `python3 -m pytest tests`.
+pytest>=8.0
