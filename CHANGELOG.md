@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.7.2](https://github.com/juninmd/patriota-vscode-theme/compare/v1.7.1...v1.7.2) (2026-10-25)
+
+
+### Bug Fixes
+
+* **ci:** instala pytest no gate e reancora a serie do semantic-release ([ac84099](https://github.com/juninmd/patriota-vscode-theme/commit/ac8409900d7d9da6177bec2708a1fbbc25640291))
+
 # 1.0.0 (2026-10-25)
 
 
