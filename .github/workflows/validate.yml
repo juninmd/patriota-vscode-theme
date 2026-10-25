@@ -1,4 +1,4 @@
-﻿name: Validate
+name: Validate
 
 on:
   pull_request:
@@ -9,7 +9,9 @@ concurrency:
   group: validate-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 jobs:
   check:
     uses: juninmd/base-actions/.github/workflows/reusable-validate.yml@main
-    continue-on-error: true
