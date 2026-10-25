@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "patriota-vscode-theme-tools"
+version = "0.0.0"
+description = "Ferramentas Python de validacao do tema Patriota para VS Code"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+# `npm test` roda `python3 -m pytest tests`; sem declarar a dependencia o gate
+# falha com "No module named pytest" em runner limpo.
+dev = ["pytest>=8.0"]
+
+[tool.setuptools]
+# O repositorio nao publica pacote: so os scripts de validacao rodam no CI.
+packages = []
