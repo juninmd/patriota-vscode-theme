@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.7.5](https://github.com/juninmd/patriota-vscode-theme/compare/v1.7.4...v1.7.5) (2026-10-27)
+
+
+### Bug Fixes
+
+* point license badge to master and honor prefers-reduced-motion in pet ([#45](https://github.com/juninmd/patriota-vscode-theme/issues/45)) ([080c7e7](https://github.com/juninmd/patriota-vscode-theme/commit/080c7e7be88cbdf4b140e4cd848ef7eb8c4a6114))
+
 ## [1.7.4](https://github.com/juninmd/patriota-vscode-theme/compare/v1.7.3...v1.7.4) (2026-10-25)
 
 
