@@ -24,3 +24,7 @@ body { position: relative; font-family: var(--vscode-font-family, sans-serif); }
   animation: fall 1.8s linear forwards;
 }
 @keyframes fall { to { translate: 0 var(--h, 200px); rotate: 540deg; opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .cloth, .leg, #stage.jump { animation: none; }
+  .confetti { display: none; }
+}
