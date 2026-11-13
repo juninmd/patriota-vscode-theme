@@ -1,5 +1,9 @@
 # Patriota 🇧🇷 — tema e pet para VS Code
 
+<p align="center">
+  <img src="docs/readme/hero.png" alt="Banner ilustrativo do Patriota (mockup com dados fictícios)" width="100%">
+</p>
+
 Tema para VS Code com as cores da bandeira do Brasil, em duas variantes (escura e clara), e **Bandeirinha**: uma bandeira com perninhas que caminha pelo painel inferior, comemora quando uma tarefa termina e solta confete quando você clica nela.
 
 ![Tema Patriota escuro com a Bandeirinha no painel inferior](images/dark.png)
@@ -156,6 +160,18 @@ O `src/extension.js` registra a view Webview, injeta uma CSP com nonce, escuta m
 | `dependabot-auto-merge.yml` | Auto-merge de PRs do Dependabot quando os checks passam |
 
 O versionamento é automático por Conventional Commits; a publicação nas lojas depende dos secrets `VSCE_PAT` e `OVSX_PAT`.
+
+## Imagens
+
+> [!NOTE]
+> **Mockups ilustrativos.** As telas abaixo foram geradas em HTML com dados fictícios (Playwright) e não são capturas de uma instalação real.
+
+<p align="center">
+  <img src="docs/readme/dark.png" alt="Patriota Dark — mockup ilustrativo com dados fictícios" width="100%">
+  <br>
+  <sub>Patriota Dark — dados fictícios.</sub>
+</p>
+
 
 ## Limitações
 
