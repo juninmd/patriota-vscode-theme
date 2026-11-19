@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.7.6](https://github.com/juninmd/patriota-vscode-theme/compare/v1.7.5...v1.7.6) (2026-11-19)
+
+
+### Bug Fixes
+
+* **pet:** respeita prefers-reduced-motion, velocidade por tempo e acesso por teclado ([#55](https://github.com/juninmd/patriota-vscode-theme/issues/55)) ([4ad33ba](https://github.com/juninmd/patriota-vscode-theme/commit/4ad33ba1dde6c8b1e561165e337196216a61db45))
+
 ## [1.7.5](https://github.com/juninmd/patriota-vscode-theme/compare/v1.7.4...v1.7.5) (2026-10-27)
 
 
