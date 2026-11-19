@@ -10,7 +10,10 @@
     'Vai, Brasil!', 'Café com pão de queijo ☕', 'Commit feito, alma lavada!',
   ];
   const colors = ['#009c3b', '#ffdf00', '#002776', '#ffffff'];
-  let x = 20, dir = 1, speed = 1, idleUntil = 0;
+  // Speeds are px per 16.7ms frame, scaled by real elapsed time so 120/144 Hz screens don't run faster.
+  const FRAME_MS = 1000 / 60;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let x = 20, dir = 1, speed = 1, idleUntil = 0, last = 0;
 
   stage.innerHTML = window.flagSvg();
 
@@ -45,13 +48,17 @@
     confetti();
   }
 
-  function tick() {
+  function tick(time) {
     const now = Date.now();
-    const idle = now < idleUntil;
+    // Clamp the step so a backgrounded tab doesn't teleport the pet when it resumes.
+    const frames = last ? Math.min((time - last) / FRAME_MS, 4) : 1;
+    last = time;
+    // Reduced motion: the pet stands still instead of pacing across the panel.
+    const idle = now < idleUntil || reduceMotion.matches;
     stage.classList.toggle('idle', idle);
     if (!idle) {
       const max = Math.max(0, window.innerWidth - stage.offsetWidth);
-      x += dir * speed;
+      x += dir * speed * frames;
       if (x <= 0 || x >= max) { dir = -dir; x = Math.min(max, Math.max(0, x)); }
       if (Math.random() < 0.002) idleUntil = now + 1500 + Math.random() * 2000;
     }
@@ -59,7 +66,13 @@
     requestAnimationFrame(tick);
   }
 
+  stage.setAttribute('role', 'button');
+  stage.setAttribute('tabindex', '0');
+  stage.setAttribute('aria-label', 'Bandeirinha: clique para comemorar');
   stage.addEventListener('click', cheer);
+  stage.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); cheer(); }
+  });
   window.addEventListener('message', ({ data }) => {
     if (data.type === 'cheer') cheer();
     if (data.type === 'config') {
@@ -69,5 +82,5 @@
   });
   vscode.postMessage({ type: 'ready' });
   say('Salve! Sou a Bandeirinha 🇧🇷');
-  tick();
+  requestAnimationFrame(tick);
 })();
