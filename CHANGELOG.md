@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.8.1](https://github.com/juninmd/patriota-vscode-theme/compare/v1.8.0...v1.8.1) (2026-11-20)
+
+
+### Bug Fixes
+
+* **theme:** make selected list rows readable ([#60](https://github.com/juninmd/patriota-vscode-theme/issues/60)) ([fc9d950](https://github.com/juninmd/patriota-vscode-theme/commit/fc9d9500643f3c7e6ef0af5dd33937ac3259d399)), closes [#009c3b](https://github.com/juninmd/patriota-vscode-theme/issues/009c3b) [#006b28](https://github.com/juninmd/patriota-vscode-theme/issues/006b28)
+
 # [1.8.0](https://github.com/juninmd/patriota-vscode-theme/compare/v1.7.6...v1.8.0) (2026-11-20)
 
 
