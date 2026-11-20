@@ -1,5 +1,12 @@
 # Change Log
 
+# [1.8.0](https://github.com/juninmd/patriota-vscode-theme/compare/v1.7.6...v1.8.0) (2026-11-20)
+
+
+### Features
+
+* **deploy:** replace Netlify with GitHub Pages ([#58](https://github.com/juninmd/patriota-vscode-theme/issues/58)) ([d906543](https://github.com/juninmd/patriota-vscode-theme/commit/d9065433ace83e416d404849b4c5bcc005276717))
+
 ## [1.7.6](https://github.com/juninmd/patriota-vscode-theme/compare/v1.7.5...v1.7.6) (2026-11-19)
 
 
