@@ -18,7 +18,6 @@ images/**
 *.md
 !README.md
 !CHANGELOG.md
-netlify.toml
 index.html
 AGENTS.md
 GEMINI.md
